@@ -1,0 +1,236 @@
+/*
+    designed by AlphaStudio.pl
+    http://www.alphastudio.pl/
+    released under Creative Commons Attribution 3.0 license
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #6C6C6C;
+    background: #348694 url('/media/images/bg.jpg');
+    padding: 80px 0 100px 0;
+}
+
+h1 {
+    font: 3em "Roboto Condensed", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-weight: normal;
+    color: #333333;
+}
+
+p {
+    padding: .75em 0;
+    line-height: 1.8em;
+}
+
+a {
+    color: #0C8DA6;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* page */
+
+.home-link {
+  margin-top: 0;
+}
+
+#page {
+    margin: 0 auto;
+    width: 960px;
+    padding: 0 12px 12px 12px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+/* header */
+
+#header {
+    height: 60px;
+    padding: 45px 0;
+}
+
+#header h1 {
+    float: left;
+    padding: 0 0 0 30px;
+    line-height: 60px;
+    color: #000000;
+}
+
+#header h1 a, #header h1 a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* menu */
+
+#menu {
+    float: right;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    display: block;
+    float: left;
+    font: 18px "Roboto Condensed", Arial, Helvetica, sans-serif;
+    line-height: 60px;
+    padding-right: 30px;
+}
+
+#menu ul li a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #C4875D;
+}
+
+#menu ul li.active a, #menu ul li a:hover {
+    color: #2D2322;
+}
+
+/* introimg */
+
+#introimg {
+    display: block;
+    padding-bottom: 12px;
+}
+
+/* main */
+
+#main {
+    background: #FFFFFF;
+    border: 1px solid #DFECEE;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* sidebar */
+
+#sidebar {
+    float: left;
+    width: 250px;
+    padding: 60px 0 20px 30px;
+}
+
+#sidebar h2 {
+    font: 2.25em "Roboto Condensed", Arial, Helvetica, sans-serif;
+}
+
+#sidebar .box {
+    padding: 1.5em 0 2em 0;
+}
+
+#sidebar p {
+    line-height: 2em;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 2.25em 0 2.75em 0;
+}
+
+#sidebar ul li {
+    padding: .3em 0 .3em .3em;
+    line-height: 2.5em;
+    border-top: 1px solid #DFECEE;
+}
+
+/* content */
+
+#content {
+    float: right;
+    width: 575px;
+    padding: 60px 30px 20px 0;
+}
+
+#content .post {
+    padding: 0 0 8em 0;
+}
+
+#content .entry {
+    padding-top: .75em;
+}
+
+#content h2 {
+    font: 2.75em "Roboto Condensed", Arial, Helvetica, sans-serif;
+    letter-spacing: -1px;
+}
+
+#content h2 a {
+    color: #333333;
+    text-decoration: none;
+}
+
+p.postmeta {
+    color: #999999;
+}
+
+p.readmore {
+    padding-top: 2em;
+    padding-right: 1em;
+    text-align: right;
+}
+
+p.readmore a {
+    display: block;
+    float: right;
+    width: 120px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    text-decoration: none;
+    background: #F0F6F7;
+    border: 1px solid #D9E8EB;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+p.readmore a:hover {
+    color: #087993;
+}
+
+.clearing {
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* footer */
+
+#footer {
+    clear: both;
+    width: 960px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+#footer p {
+    text-align: center;
+}
+
+#footer a {
+    color: #C4875D;
+}
+
+#team h5 {
+    margin: 0;
+}

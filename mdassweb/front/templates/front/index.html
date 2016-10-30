@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{% block title %}Home{% endblock %}</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="content-language" content=""/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link href="/media/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="page">
+    <div id="header">
+        <h1 class="home-link"><a href="/front">Lnc2Cancer</a></h1>
+        <div id="menu">
+            <ul>
+                {#                    <li class="active"><a href="#">Home</a></li>#}
+                <li class="active"><a href="/front">Home</a></li>
+                <li><a href="#">Browse</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Links</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Submit</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="/front/about">About</a></li>
+            </ul>
+        </div><!-- menu -->
+    </div><!-- header -->
+    {% block content %}
+        <img id="introimg" src="/media/images/elife-04630-fig6-v2.jpg" width="100%" alt=""/>
+        <div id="main">
+            <div id="sidebar">
+                <h2>LNCRnA Links</h2>
+                <ul>
+                    <li><a href="#">Vestibulum ante ipsum primis</a></li>
+                    <li><a href="#">Lobortis tempus vel nec lorem</a></li>
+                    <li><a href="#">Aenean rutrum tortor a purus</a></li>
+                    <li><a href="#">Cum sociis natoque penatibus</a></li>
+                    <li><a href="#">Etiam convallis enim tincidunt</a></li>
+                </ul>
+                <h2>Integer rhoncus</h2>
+                <div class="box">
+                    <p>Mauris sollicitudin tincidunt magna vitae semper. Curabitur ut pharetra quam. Integer rhoncus
+                        convallis urna vitae mattis. Sed pharetra massa ac metus fermentum et iaculis enim accumsan.</p>
+                </div>
+                <h2>Other Links</h2>
+                <ul>
+                    <li><a href="#">Integer non enim nec tellus</a></li>
+                    <li><a href="#">Lobortis tempus vel nec lorem</a></li>
+                    <li><a href="#">Cum sociis natoque penatibus</a></li>
+                    <li><a href="#">Etiam convallis enim tincidunt</a></li>
+                    <li><a href="#">Aenean rutrum tortor a purus</a></li>
+                </ul>
+            </div><!-- sidebar -->
+            <div id="content">
+                <div class="post">
+                    <h2><a href="#">Terms of Use</a></h2>
+                    {#                    <p class="postmeta">Posted in <a href="#">Class apent</a> | Sep 20, 2019 | <a href="#">4 comments</a></p>#}
+                    <div class="entry">
+                        <p>The template is released under the <a href="http://creativecommons.org/licenses/by/3.0/">Creative
+                            Commons Attribution</a> license. This means it can be used for both private and commercial
+                            purposes, edited freely or redistributed as long as you keep the link back to Alpha Studio.
+                            The link, however, can be moved to any other place of the site. Do not use the template for
+                            websites with illegal or immoral content.</p>
+                        <p>The image comes from <a
+                                href="http://www.publicdomainpictures.net/">PublicDomainPictures.net</a> and is in
+                            public domain. Please be aware that public domain content may in some cases infringe
+                            trademark, property or any other rights of others, so you use it at your own risk.</p>
+                        {#                        <p class="readmore"><a href="#">read more</a></p>#}
+                    </div>
+                </div><!-- post -->
+                <div class="post">
+                    <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
+                    {#                    <p class="postmeta">Posted in <a href="#">Lorem ipsum</a> | Sep 19, 2019 | <a href="#">2 comments</a></p>#}
+                    <div class="entry">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec dui quis urna
+                            sollicitudin sodales. Fusce laoreet, ligula et rhoncus volutpat, felis magna varius tortor,
+                            ac molestie diam lorem in lectus. Aliquam venenatis mollis est, a porttitor ipsum interdum
+                            nec.</p>
+                        <p>Quisque congue lacus sed odio fermentum tincidunt. Proin vitae nulla velit. Cras consectetur
+                            commodo scelerisque. Curabitur leo nisl, blandit at tempus et, interdum at risus. Sed dui
+                            augue, pellentesque ac pulvinar id, malesuada eget diam. Integer elementum sem eget tortor
+                            faucibus id pellentesque lorem dignissim.</p>
+                        {#                        <p class="readmore"><a href="#">read more</a></p>#}
+                    </div>
+                </div><!-- post -->
+            </div><!-- content -->
+            <div class="clearing">&nbsp;</div>
+        </div><!-- main -->
+    {% endblock %}
+    <div id="footer">
+        <p>Copyright &copy; 2016</p>
+    </div>
+</div><!-- page -->
+</body>
+</html>
