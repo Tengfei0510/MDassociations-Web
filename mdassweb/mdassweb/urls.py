@@ -18,9 +18,12 @@ from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.contrib import admin
 
+from .view import index
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^front/', include('front.urls')),
+    url(r'^$', index, name='index')
 ]
 
 urlpatterns += static(
