@@ -43,23 +43,23 @@
                 {% if data|length > 0  %}
                     <div class="row">
                         <div class="col-md-11">
-                            <h4>miRNA name: <span style="color: red">{{ request.GET.mirna }}</span></h4>
+                            <h4>Cancer name: <span style="color: red">{{ request.GET.cancer }}</span> </h4>
                         </div>
                     </div>
                     <table class="table table-bordered table-responsive table-hover">
                         <thead>
                             <tr>
+                                <td>miRNA Name</td>
                                 <td>miRBase Information</td>
                                 <td>PMID or Related Information</td>
-                                <td>Cancer Name</td>
                                 <td>Details</td>
                             </tr>
                         </thead>
                         {% for d in data %}
                         <tr>
-                            <td><a href="{{ d.url }}" target="_blank">{{ d.mirbase }}</a></td>
+                            <td style="min-width: 150px;">{{ d.rna }}</td>
+                            <td><a href="{{ d.url }}" target="_blank">miRBase</a></td>
                             <td><a href="{{ d.pmid_url }}">{{ d.PMID }}</a></td>
-                            <td>{{ d.cancer }}</td>
                             <td>{{ d.details }}</td>
                         </tr>
                         {% endfor %}
@@ -82,3 +82,4 @@
         });
     </script>
 {% endblock %}
+

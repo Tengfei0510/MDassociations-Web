@@ -26,37 +26,39 @@ def browse_view(request):
         cancers.append(cancer['cancer'])
 
     data = []
-    print(req_cancer)
+    template = 'front/browse.html'
     # mirna
     if req_mirna:
-
         rna_query = rna_collection.find({'rna': {'$eq': req_mirna}})
         for rna in rna_query:
             temp = dict()
-            if rna == 'dbDEMC':
-                temp['url'] = 'http://www.mirbase.org'
+            temp['url'] = 'http://www.mirbase.org/cgi-bin/query.pl?terms={}'.format(rna['rna'])
+            if rna['pmid'] == 'dbDEMC':
+                temp['pmid_url'] = 'http://www.picb.ac.cn/dbDEMC/index.html'
             else:
-                temp['url'] = 'https://www.ncbi.nlm.nih.gov/pubmed/?term={}'.format(rna['pmid'])
+                temp['pmid_url'] = 'https://www.ncbi.nlm.nih.gov/pubmed/?term={}'.format(rna['pmid'])
             temp['PMID'] = rna['pmid']
             temp['cancer'] = rna['cancer']
             temp['details'] = rna['details']
             temp['mirbase'] = 'mirbase'
             data.append(temp)
+
     elif req_cancer:
         cancer_query = rna_collection.find({'cancer': {'$eq': req_cancer}})
         for rna in cancer_query:
             temp = dict()
-            if rna == 'dbDEMC':
-                temp['url'] = 'http://www.mirbase.org'
+            temp['url'] = 'http://www.mirbase.org/cgi-bin/query.pl?terms={}'.format(rna['rna'])
+            if rna['pmid'] == 'dbDEMC':
+                temp['pmid_url'] = 'http://www.picb.ac.cn/dbDEMC/index.html'
             else:
-                temp['url'] = 'https://www.ncbi.nlm.nih.gov/pubmed/?term={}'.format(rna['pmid'])
+                temp['pmid_url'] = 'https://www.ncbi.nlm.nih.gov/pubmed/?term={}'.format(rna['pmid'])
             temp['PMID'] = rna['pmid']
-            temp['cancer'] = rna['cancer']
+            temp['rna'] = rna['rna']
             temp['details'] = rna['details']
-            temp['mirbase'] = 'mirbase'
             data.append(temp)
-    print(data)
-    return render(request, 'front/browse.html', {
+        template = 'front/browse_cancer.html'
+
+    return render(request, template, {
         'mirnas': mirnas,
         'cancers': cancers,
         'data': data,
