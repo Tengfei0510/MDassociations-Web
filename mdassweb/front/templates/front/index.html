@@ -24,17 +24,14 @@
 <body>
 <div id="page">
     <div id="header">
-        <h1 class="home-link"><a href="/front">Lnc2Cancer</a></h1>
+        <h1 class="home-link"><a href="/front">MiRCancer</a></h1>
         <div id="menu">
             <ul>
                 {#                    <li class="active"><a href="#">Home</a></li>#}
                 <li class="active"><a href="/front">Home</a></li>
-                <li><a href="#">Browse</a></li>
-                <li><a href="#">Search</a></li>
+                <li><a href="/front/browse">Browse</a></li>
+                <li><a href="#">RCNMN</a></li>
                 <li><a href="#">Links</a></li>
-                <li><a href="#">Download</a></li>
-                <li><a href="#">Submit</a></li>
-                <li><a href="#">Help</a></li>
                 <li><a href="/front/about">About</a></li>
             </ul>
         </div><!-- menu -->
@@ -43,7 +40,7 @@
         <img id="introimg" src="/media/images/elife-04630-fig6-v2.jpg" width="100%" alt=""/>
         <div id="main">
             <div id="sidebar">
-                <h2>LNCRnA Links</h2>
+                <h2>Links</h2>
                 <ul>
                     <li><a href="#">Vestibulum ante ipsum primis</a></li>
                     <li><a href="#">Lobortis tempus vel nec lorem</a></li>
@@ -106,4 +103,6 @@
     </div>
 </div><!-- page -->
 </body>
+{% block js %}
+{% endblock %}
 </html>

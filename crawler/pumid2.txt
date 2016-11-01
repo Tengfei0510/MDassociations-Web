@@ -1,0 +1,407 @@
+A cyclin D1/microRNA 17/20 regulatory feedback loop in control of breast cancer cell proliferation.
+A functional polymorphism in the miR-146a gene and age of familial breast/ovarian cancer diagnosis.
+A functional polymorphism in the miR-146a gene is associated with the risk for hepatocellular carcinoma.
+A functional screen identifies miR-34a as a candidate Neuroblastoma tumor suppressor gene.
+A genetic screen implicates miRNA-372 and miRNA-373 as oncogenes in testicular germ cell tumors.
+A microRNA expression ratio defining the invasive phenotype in bladder tumors.
+A microRNA expression signature of human solid tumors defines cancer gene targets.
+A microRNA polycistron as a potential human oncogene.
+A MicroRNA signature associated with prognosis and progression in chronic lymphocytic leukemia.
+A micro-RNA signature associated with race, tumor size, and target gene activity in human uterine leiomyomas.
+A miR-200 microRNA cluster as prognostic marker in advanced ovarian cancer.
+A pleiotropically acting microRNA, miR-31, inhibits breast cancer metastasis.
+A polycistronic microRNA cluster, miR-17-92, is overexpressed in human lung cancers and enhances cell proliferation.
+A reciprocal repression between ZEB1 and members of the miR-200 family promotes EMT and invasion in cancer cells.
+A risk variant in an miR-125b binding site in BMPR1B is associated with breast cancer pathogenesis
+A SNP in a let-7 microRNA complementary site in the KRAS 3' untranslated region increases non-small cell lung cancer risk.
+Abnormal microRNA-16 locus with synteny to human 13q14 linked to CLL in NZB mice.
+Accumulation of miR-155 and BIC RNA in human B cell lymphomas.
+Alteration of microRNA expression in vinyl-carbamate-induced mouse lung tumors and modulation by the chemopreventive agent indole-3-carbinol
+Altered expression of miR-21, miR-31, miR-143 and miR-145 is related to clinicopathologic features of Colorectal Neoplasms.
+Altered MicroRNA expression confined to specific epithelial cell subpopulations in breast cancer.
+Altered miRNA expression in sputum for diagnosis of non-small cell lung cancer.
+An androgen-regulated miRNA suppresses Bak1 expression and induces androgen-independent growth of prostate cancer cells.
+Analysis of microRNAs in pancreatic fine-needle aspirates can classify benign and malignant tissues.
+Antagomir-17-5p abolishes the growth of therapy-resistant Neuroblastoma through p21 and BIM.
+Antiproliferative effects by Let-7 repression of high-mobility group A2 in uterine leiomyoma.
+Antisense Inhibition of microRNA-21 or -221 Arrests Cell Cycle, Induces Apoptosis, and Sensitizes the Effects of Gemcitabine in Pancreatic Adenocarcinoma
+Apoptosis induction by antisense oligonucleotides against miR-17-5p and miR-20a in lung cancers overexpressing miR-17-92.
+Association between High miR-211 microRNA Expression and the Poor Prognosis of Oral Carcinoma.
+Association of inflammation-related and microRNA gene expression with cancer-specific mortality of colon adenocarcinoma
+Association of MicroRNA-196a-2 Gene Polymorphism with Gastric Cancer Risk in a Chinese Population
+Augmentation of tumor angiogenesis by a Myc-activated microRNA cluster.
+B cell differentiation in EBV-positive Burkitt Lymphoma is impaired at post-transcriptional level by miRNA altered expression.
+Bead-based microarray analysis of microRNA expression in hepatocellular carcinoma: miR-338 is downregulated.
+BIC and miR-155 are highly expressed in Hodgkin, primary mediastinal and diffuse large B cell lymphomas.
+CDKN2A, NF2, and JUN are dysregulated among other genes by miRNAs in malignant mesothelioma -A miRNA microarray analysis.
+Change in expression of miR-let7c, miR-100, and miR-218 from high grade localized prostate cancer to metastasis.
+Characterization of global microRNA expression reveals oncogenic potential of miR-145 in metastatic Colorectal Neoplasms
+Cholesteatoma Growth and Proliferation: Posttranscriptional Regulation by MicroRNA-21.
+Chromatin remodeling at Alu repeats by epigenetic treatment activates silenced microRNA-512-5p with downregulation of Mcl-1 in human gastric cancer cells.
+Clin Cancer Res. 2009 Apr 15;15(8):2850-5. Epub 2009 Apr 7.
+Clinical significance of high mobility group A2 in human gastric cancer and its relationship to let-7 microRNA family.
+Commentary on Genomic loss of microRNA-101 leads to overexpression of histone methyltransferase EZH2 in cancer 
+Comprehensive analysis of microRNA expression patterns in hepatocellular carcinoma and non-tumorous tissues.
+Concerted microRNA control of Hedgehog signalling in cerebellar neuronal progenitor and tumour cells.
+Concomitant suppression of three target genes can explain the impact of a microRNA on metastasis
+Contextual extracellular cues promote tumor cell EMT and metastasis by regulating miR-200 family expression
+Coordinate Regulation of FOXO1 by miR-27a, miR-96, and miR-182 in Breast Cancer Cells.
+Coordinate suppression of ERBB2 and ERBB3 by enforced expression of micro-RNA miR-125a or miR-125b.
+Co-suppression of miR-221/222 cluster suppresses human Glioma cell growth by targeting p27kip1 in vitro and in vivo.
+Counterbalance between RB inactivation and miR-17-92 overexpression in reactive oxygen species and DNA damage induction in lung cancers.
+CpG island hypermethylation of tumor suppressor microRNAs in human cancer.
+Cyclin G1 is a target of miR-122a, a microRNA frequently down-regulated in human hepatocellular carcinoma.
+Decreased Expression of MicroRNA-143 and -145 in Human Gastric Cancers.
+Decreased expression of miR-125b and miR-100 in oral cancer cells contributes to malignancy.
+Deregulated expression of miR-106a predicts survival in human colon cancer patients.
+Detection of elevated levels of tumour-associated microRNAs in serum of patients with diffuse large B-cell lymphoma.
+Detection of let-7a microRNA by real-time PCR in Colorectal Neoplasms: a single-centre experience from China.
+Detection of let-7a microRNA by real-time PCR in gastric carcinoma.
+Detection of metastatic head and neck squamous cell carcinoma using the relative  expression of tissue-specific mir-205.
+Detection of miR-106a in gastric carcinoma and its clinical significance.
+Diagnostic and prognostic implications of microRNA profiling in prostate carcinoma.
+Diagnostic and prognostic microRNAs in stage II colon cancer.
+Differential expression of microRNA species in human uterine leiomyoma versus normal myometrium.
+Differential expression profiles of microRNAs between breast cancer cells and mammary epithelial cells.
+Differential expression profiling of microRNAs and their potential involvement in renal cell carcinoma pathogenesis.
+Differential MicroRNA-34a Expression and Tumor Suppressor Function in Retinoblastoma Cells.
+Differential patterns of microRNA expression in Neuroblastoma are correlated with prognosis, differentiation, and apoptosis.
+Differentially regulated micro-RNAs and actively translated messenger RNA transcripts by tumor suppressor p53 in colon cancer.
+Direct regulation of an oncogenic micro-RNA cluster by E2F transcription factors.
+Disrupting the pairing between let-7 and Hmga2 enhances oncogenic transformation.
+Distinct microRNA alterations characterize high- and low-grade bladder cancer
+Distinct microRNA expression profiles in acute myeloid leukemia with common translocations.
+Distinctive microRNA profiles relating to patient survival in esophageal squamous cell carcinoma.
+Distinctive microRNA signature of acute myeloid leukemia bearing cytoplasmic mutated nucleophosmin.
+Distinctive patterns of microRNA expression associated with karyotype in acute myeloid leukaemia.
+Down-regulated microRNA-200a in Meningiomas Promotes Tumor Growth by Reducing E-cadherin and Activating the Wnt/{beta} catenin Signaling Pathway.
+Down-regulation of hsa-miR-10a in chronic myeloid leukemia CD34+ cells increases  USF2-mediated cell growth.
+Downregulation of microRNA-1 (miR-1) in lung cancer: Suppression of tumorigenic property of lung cancer cells and their sensitization to doxorubicin induced apoptosis bymiR-1.
+Downregulation of microRNAs-143 and -145 in B-cell malignancies.
+Downregulation of miR-122 in the rodent and human hepatocellular carcinomas.
+Downregulation of miR-138 is associated with overexpression of human telomerase reverse transcriptase protein in human anaplastic thyroid carcinoma cell lines.
+Down-regulation of miR-141 in gastric cancer and its involvement in cell growth.
+Downregulation of miR-193b contributes to enhance urokinase-type plasminogen activator (uPA) expression and tumor progression and invasion in human breast
+Down-regulation of miR-92 in human plasma is a novel marker for acute leukemia patients.
+Downregulation of miRNA-200c links breast cancer stem cells with normal stem cells.
+Down-regulation of the microRNAs miR-34a, miR-127, and miR-200b in rat liver during hepatocarcinogenesis induced by a methyl-deficient diet.
+Down-regulations of B-cell lymphoma 2 (Bcl-2) and myeloid cell leukemia sequence 1 (Mcl-1) by MicroRNA 153 induce apoptosis in a glioblastoma cell line DBTRG-05MG.
+E2F1-regulated microRNAs impair TGFbeta-dependent cell-cycle arrest and apoptosis in gastric cancer.
+E-cadherin transcriptional down-regulation by epigenetic and microRNA-200 family alterations is related to mesenchymal and drug-resistant phenotypes in human breast cancer cells.
+Ectopic expression of miR-126*, an intronic product of the vascular endothelial EGF-like 7 gene, regulates prostein translation and invasiveness of prostate cancer LNCaP cells.
+Effects of miR-34a on cell growth and chemoresistance in prostate cancer PC3 cells.
+EGFR regulation by microRNA in lung cancer: correlation with clinical response and survival to gefitinib and EGFR expression in cell lines.
+Elevated expression of microRNAs 155, 203, 210 and 222 in pancreatic tumours associates with poorer survival.
+Elevated expression of the miR-17-92 polycistron and miR-21 in hepadnavirus-associated hepatocellular carcinoma contributes to the malignant phenotype.
+Emerging role for microRNAs in acute promyelocytic leukemia.
+Endogenous human microRNAs that suppress breast cancer metastasis.
+Epidermal growth factor receptor-regulated miR-125a-5p - a metastatic inhibitor
+Epigallocatechin gallate up-regulation of miR-16 and induction of apoptosis in
+Epigenetic inactivation of microRNA gene hsa-mir-9-1 in human breast cancer.
+Epigenetic inactivation of microRNA genes in mammary carcinoma.
+Epigenetic regulation of microRNA expression in Colorectal Neoplasms.
+Epigenetic regulation of microRNA-370 by interleukin-6 in malignant human cholangiocytes.
+Epigenetic silencing of MicroRNA miR-107 regulates cyclin-dependent kinase 6 expression in Pancreatic Neoplasms.
+Epigenetic silencing of microRNA-34b/c and B-cell translocation gene 4 is associated with CpG island methylation in Colorectal Neoplasms.
+Epigenetic silencing of the intronic microRNA hsa-miR-342 and its host gene EVL in Colorectal Neoplasms.
+Epigenetic silencing of the myelopoiesis regulator microRNA-223 by the AML1/ETO oncoprotein.
+Epigenetic silencing of the tumor suppressor microRNA Hsa-miR-124a regulates CDK6 expression and confers a poor prognosis in acute lymphoblastic leukemia.
+Exploration of tumor-suppressive microRNAs silenced by DNA hypermethylation in oral cancer.
+Expression of microRNA-146 suppresses NF-kappaB activity with reduction of metastatic potential in breast cancer cells.
+Expression of microRNA-221 is progressively reduced in aggressive prostate cancer and metastasis and predicts clinical recurrence.
+Expression of microRNAs and protein-coding genes associated with perineural invasion in prostate cancer.
+Expression of the miR-17-92 polycistron in Leukemia, Myeloid, Chronic-Phase CD34+ cells.
+Expression profiling identifies microRNA signature in Pancreatic Neoplasms.
+Extensive modulation of a set of microRNAs in primary glioblastoma.
+Four miRNAs associated with aggressiveness of lymph node-negative, estrogen receptor-positive human breast cancer.
+Frequent deletions and down-regulation of micro-RNA genes miR15 and miR16 at 13q14 in chronic lymphocytic leukemia.
+Functional links between clustered microRNAs: suppression of cell-cycle inhibitors by microRNA clusters in gastric cancer.
+Gene silencing of MIR22 in acute lymphoblastic leukaemia involves histone modifications independent of promoter DNA methylation
+Genetic and epigenetic silencing of microRNA-203 enhances ABL1 and BCR-ABL1 oncogene expression.
+Genetic unmasking of an epigenetically silenced microRNA in human cancer cells.
+Genome-wide microRNA expression profiling in renal cell carcinoma: significant down-regulation of miR-141 and miR-200c.
+Genomic and epigenetic alterations deregulate microRNA expression in human epithelial ovarian cancer.
+Genomic loss of microRNA-101 leads to overexpression of histone methyltransferase EZH2 in cancer.
+Genomic profiling of microRNAs in bladder cancer: miR-129 is associated with poor outcome and promotes cell death in vitro.
+Germline mutation of microRNA-125a is associated with breast cancer.
+High expression of precursor microRNA-155/BIC RNA in children with Burkitt lymphoma.
+High miR-196a levels promote the oncogenic phenotype of Colorectal Neoplasms cells.
+High miR-21 expression in breast cancer associated with poor disease-free survival in early stage disease and high TGF-beta1.
+High mobility group A2 is a target for miRNA-98 in head and neck squamous cell carcinoma.
+High-throughput microRNAome analysis in human germ cell tumours.
+Homozygous deletion scanning of the lung cancer genome at a 100-kb resolution.
+hsa-mir-181a and hsa-mir-181b function as tumor suppressors in human Glioma cells.
+hsa-miR-210 Is induced by hypoxia and is an independent prognostic factor in breast cancer.
+Hypermethylation of let-7a-3 in epithelial ovarian cancer is associated with low insulin-like growth factor-II expression and favorable prognosis.
+Hypoxia-inducible mir-210 regulates normoxic gene expression involved in tumor initiation
+Identification and Functional Characterization of microRNAs Involved in the Malignant Progression of Gliomas
+Identification by Real-time PCR of 13 mature microRNAs differentially expressed in Colorectal Neoplasms and non-tumoral tissues.
+Identification of a microRNA signature associated with progression of leukoplakia to oral carcinoma.
+Identification of metastasis-related microRNAs in hepatocellular carcinoma.
+Identification of microRNA-181 by genome-wide screening as a critical player in EpCAM-positive hepatic cancer stem cells.
+Identification of miRNAs associated with tumorigenesis of retinoblastoma by miRNA microarray analysis.
+Identification of new microRNA genes and aberrant microRNA profiles in childhood acute lymphoblastic leukemia.
+Identification of novel microRNA targets based on microRNA signatures in bladder cancer.
+Identification of pyruvate kinase type M2 as potential oncoprotein in squamous cell carcinoma of tongue through microRNA profiling.
+Integrative molecular-bioinformatics study of human adrenocortical tumors: microRNA, tissue specific target prediction and pathway analysis.
+Integrin beta(3) expression is regulated by let-7a miRNA in malignant melanoma.
+Involvement of human micro-RNA in growth and response to chemotherapy in human Cholangiocarcinoma cell lines.
+Involvement of microRNA-451 in resistance of the MCF-7 breast cancer cells to chemotherapeutic drug doxorubicin.
+Karyotype specific microRNA signature in chronic lymphocytic leukemia.
+Lack of BIC and microRNA miR-155 expression in primary cases of Burkitt lymphoma.
+Let-7 expression defines two differentiation stages of cancer.
+let-7 microRNA functions as a potential growth suppressor in human colon cancer cells.
+Let-7 prevents early cancer progression by suppressing expression of the embryonic gene HMGA2.
+let-7 regulates self renewal and tumorigenicity of breast cancer cells.
+Let-7a elevates p21(WAF1) levels by targeting of NIRF and suppresses the growth of A549 lung cancer cells
+Let-7a microRNA functions as a potential tumor suppressor in human laryngeal cancer
+Let-7a microRNA suppresses therapeutics-induced cancer cell death by targeting caspase-3.
+Locked nucleic acid in situ hybridization analysis of miR-21 expression during Colorectal Neoplasms development.
+Loss of miR-122 expression in liver cancer correlates with suppression of the
+Loss of mir-146a function in hormone-refractory prostate cancer.
+Low-level expression of microRNAs let-7d and miR-205 are prognostic markers of head and neck squamous cell carcinoma.
+Marked change in microRNA expression during neuronal differentiation of human teratocarcinoma NTera2D1 and mouse embryonal carcinoma P19 cells.
+Mechanism of chemoresistance mediated by miR-140 in human osteosarcoma and colon cancer cells
+Mechanism of growth inhibition by MicroRNA 145: the role of the IGF-I receptor signaling pathway.
+Methylation mediated silencing of MicroRNA-1 gene and its role in hepatocellular carcinogenesis.
+Micro RNA 145 targets the insulin receptor substrate-1 and inhibits the growth of colon cancer cells.
+Microarray analysis of microRNA expression in renal clear cell carcinoma.
+MicroRNA 133B targets pro-survival molecules MCL-1 and BCL2L2 in lung cancer.
+MicroRNA 21 promotes Glioma invasion by targeting matrix metalloproteinase regulators.
+MicroRNA 29b functions in acute myeloid leukemia
+MicroRNA -29b induces global DNA hypomethylation and tumor suppressor gene re-expression in acute myeloid leukemia by targeting directly DNMT3A and 3B and indirectly DNMT1.
+MicroRNA 29c is down-regulated in nasopharyngeal carcinomas, up-regulating mRNAs encoding extracellular matrix proteins.
+MicroRNA alterations in head and neck squamous cell carcinoma.
+MicroRNA expression abnormalities in pancreatic endocrine and acinar tumors are associated with distinctive pathologic features and clinical behavior.
+MicroRNA expression alterations are linked to tumorigenesis and non-neoplastic processes in pancreatic ductal adenocarcinoma.
+MicroRNA expression and identification of putative miRNA targets in ovarian cancer.
+MicroRNA expression distinguishes between germinal center B cell-like and activated B cell-like subtypes of diffuse large B cell lymphoma.
+MicroRNA expression in squamous cell carcinoma and adenocarcinoma of the esophagus: associations with survival
+MicroRNA expression patterns to differentiate pancreatic adenocarcinoma from normal pancreas and chronic pancreatitis.
+MicroRNA expression profiles associated with prognosis and therapeutic outcome in colon adenocarcinoma.
+MicroRNA expression profiles in serous ovarian carcinoma.
+MicroRNA expression profiles of Esophageal Neoplasms.
+MicroRNA expression profiling in human ovarian cancer: miR-214 induces cell survival and cisplatin resistance by targeting PTEN.
+MicroRNA expression profiling in prostate cancer.
+MicroRNA expression signatures accurately discriminate acute lymphoblastic leukemia from acute myeloid leukemia.
+MicroRNA expression, survival, and response to interferon in liver cancer
+MicroRNA gene expression deregulation in human breast cancer.
+MicroRNA gene expression during retinoic acid-induced differentiation of human acute promyelocytic leukemia.
+MicroRNA let-7a down-regulates MYC and reverts MYC-induced growth in Burkitt lymphoma cells.
+MicroRNA let-7b targets important cell cycle molecules in malignant melanoma cells and interferes with anchorage-independent growth.
+MicroRNA microarray identifies Let-7i as a novel biomarker and therapeutic target in human epithelial ovarian cancer.
+MicroRNA miR-181a correlates with morphological sub-class of acute myeloid leukaemia and the expression of its target genes in global genome-wide analysis.
+microRNA miR-196a-2 and breast cancer: a genetic and epigenetic association study and functional analysis.
+MicroRNA miR-199a* regulates the MET proto-oncogene and the downstream extracellular signal-regulated kinase 2 (ERK2).
+MicroRNA miR-21 overexpression in human breast cancer is associated with advanced clinical stage, lymph node metastasis and patient poor prognosis.
+MicroRNA miR-29 modulates expression of immunoinhibitory molecule B7-H3: potential implications for immune based therapy of human solid tumors.
+MicroRNA miR-34 inhibits human Pancreatic Neoplasms tumor-initiating cells
+MicroRNA profile analysis of human prostate cancers.
+MicroRNA profiling in hepatocellular tumors is associated with clinical features and oncogene/tumor suppressor gene mutations.
+MicroRNA profiling in human medulloblastoma.
+Micro-RNA profiling in kidney and bladder cancers.
+MicroRNA profiling reveals distinct signatures in B cell chronic lymphocytic leukemias.
+MicroRNA signature predicts survival and relapse in lung cancer.
+MicroRNA signatures characterize diffuse large B-cell lymphomas and follicular lymphomas.
+MicroRNA signatures in human ovarian cancer.
+MicroRNA signatures of TRAIL resistance in human non-small cell lung cancer.
+MicroRNA-1/206 targets c-Met and inhibits rhabdomyosarcoma development.
+MicroRNA-101 regulates expression of the v-fos FBJ murine osteosarcoma viral oncogene homolog (FOS) oncogene in human hepatocellular carcinoma.
+MicroRNA-101, down-regulated in hepatocellular carcinoma, promotes apoptosis and suppresses tumorigenicity.
+MicroRNA-10b is overexpressed in malignant Glioma and associated with tumor invasive factors, uPAR and RhoC.
+MicroRNA-122 inhibits tumorigenic properties of hepatocellular carcinoma cells and sensitizes these cells to Sorafenib
+MicroRNA-122a functions as a novel tumor suppressor downstream of Adenomatous polyposis coli in gastrointestinal cancers.
+MicroRNA-125a represses cell growth by targeting HuR in breast cancer
+MicroRNA-126 inhibits invasion in non-small cell lung carcinoma cell lines.
+MicroRNA-126 regulates HOXA9 by binding to the homeobox.
+MicroRNA-128 inhibits Glioma cells proliferation by targeting transcription factor E2F3a.
+MicroRNA-138 suppresses invasion and promotes apoptosis in head and neck squamous cell carcinoma cell lines.
+MicroRNA-141 Regulates Smad Interacting Protein 1 (SIP1) and Inhibits Migration and Invasion of Colorectal Neoplasms Cells
+MicroRNA-143 and -145 in colon cancer.
+MicroRNA-143 as a tumor suppressor for bladder cancer.
+MicroRNA-143 reduces viability and increases sensitivity to 5-fluorouracil in HCT116 human Colorectal Neoplasms cells
+MicroRNA-143 targets DNA methyltransferases 3A in Colorectal Neoplasms.
+microRNA-146b inhibits Glioma cell migration and invasion by targeting MMPs.
+MicroRNA-155 is regulated by the transforming growth factor beta/Smad pathway and contributes to epithelial cell plasticity by targeting RhoA.
+MicroRNA-155 regulates human angiotensin II type 1 receptor expression in fibroblasts.
+MicroRNA-15b regulates cell cycle progression by targeting cyclins in Glioma cells.
+MicroRNA-15b represents an independent prognostic parameter and is correlated with tumor cell proliferation and apoptosis in malignant melanoma
+MicroRNA-17-3p is a prostate tumor suppressor in vitro and in vivo, and is decreased in high grade prostate tumors analyzed by laser capture microdissection
+MicroRNA-17-92 downregulates expression of distinct targets in different B-cell lymphoma subtypes.
+MicroRNA-183 regulates Ezrin expression in lung cancer cells.
+MicroRNA-184 antagonizes microRNA-205 to maintain SHIP2 levels in epithelia.
+MicroRNA-195 suppresses tumorigenicity and regulates G(1)/S transition of human hepatocellular carcinoma cells.
+MicroRNA-196a is a Potential Marker of Progression during Barrett's Metaplasia-Dysplasia-Invasive Adenocarcinoma Sequence in Esophagus.
+MicroRNA-196a targets annexin A1: a microRNA-mediated mechanism of annexin A1 downregulation in cancers.
+MicroRNA-199b-5p impairs cancer stem cells through negative regulation of HES1 in medulloblastoma.
+MicroRNA-200c mitigates invasiveness and restores sensitivity to microtubule-targeting chemotherapeutic agents.
+microRNA-205 regulates HER3 in human breast cancer.
+MicroRNA-21 (miR-21) post-transcriptionally downregulates tumor suppressor Pdcd4 and stimulates invasion, intravasation and metastasis in Colorectal Neoplasms.
+MicroRNA-21 directly targets MARCKS and promotes apoptosis resistance and invasion in prostate cancer cells.
+MicroRNA-21 down-regulates the expression of tumor suppressor PDCD4 in human glioblastoma cell T98G.
+MicroRNA-21 is an antiapoptotic factor in human glioblastoma cells.
+MicroRNA-21 is overexpressed in Pancreatic Neoplasms and a potential predictor of survival.
+MicroRNA-21 knockdown disrupts Glioma growth in vivo and displays synergistic cytotoxicity with neural precursor cell delivered S-TRAIL in human Gliomas.
+MicroRNA-21 modulates biological functions of Pancreatic Neoplasms cells including their proliferation, invasion, and chemoresistance.
+microRNA-21 negatively regulates Cdc25A and cell cycle progression in colon cancer cells
+MicroRNA-21 promotes cell transformation by targeting the programmed cell death 4 gene.
+MicroRNA-21 regulates expression of the PTEN tumor suppressor gene in human hepatocellular cancer.
+MicroRNA-21 regulates the proliferation and invasion in esophageal squamous cell 
+MicroRNA-21 targets a network of key tumor-suppressive pathways in glioblastoma cells.
+MicroRNA-21 targets LRRFIP1 and contributes to VM-26 resistance in glioblastoma multiforme.
+MicroRNA-21 targets the tumor suppressor gene tropomyosin 1 (TPM1).
+MicroRNA-21 targets tumor suppressor genes in invasion and metastasis.
+MicroRNA-221 and -222 pathway controls melanoma progression.
+MicroRNA-221 silencing predisposed human bladder cancer cells to undergo apoptosis induced by TRAIL
+MicroRNA-221 targets Bmf in hepatocellular carcinoma and correlates with tumor multifocality.
+MicroRNA-221/222 Confers Tamoxifen Resistance in Breast Cancer by Targeting p27Kip1.
+MicroRNA-221/222 Negatively Regulates Estrogen Receptor{alpha} and Is Associated with Tamoxifen Resistance in Breast Cancer.
+MicroRNA-222 regulates cell invasion by targeting matrix metalloproteinase 1(MMP1) and manganese superoxide dismutase 2 (SOD2) in tongue squamous cell
+MicroRNA-223 is commonly repressed in hepatocellular carcinoma and potentiates expression of Stathmin1.
+MicroRNA-23b mediates urokinase and c-met downmodulation and a decreased migration of human hepatocellular carcinoma cells.
+MicroRNA-27a functions as an oncogene in gastric adenocarcinoma by targeting prohibitin.
+MicroRNA-29 family reverts aberrant methylation in lung cancer by targeting DNA methyltransferases 3A and 3B.
+MicroRNA-29c and microRNA-223 downregulation has in vivo significance in chronic lymphocytic leukemia and improves disease risk stratification.
+MicroRNA-328 Negatively Regulates the Expression of Breast Cancer Resistance Protein (BCRP/ABCG2) in Human Cancer Cells.
+MicroRNA-330 acts as tumor suppressor and induces apoptosis of prostate cancer cells through E2F1-mediated suppression of Akt phosphorylation.
+MicroRNA-34a functions as a potential tumor suppressor by inducing apoptosis in Neuroblastoma cells.
+MicroRNA-34a inhibits glioblastoma growth by targeting multiple oncogenes
+MicroRNA-34a inhibits uveal melanoma cell proliferation and migration through downregulation of c-Met.
+MicroRNA-34b and MicroRNA-34c are targets of p53 and cooperate in control of cell proliferation and adhesion-independent growth.
+MicroRNA-373 (miR-373) post-transcriptionally regulates large tumor suppressor, homolog 2 (LATS2) and stimulates proliferation in human Esophageal Neoplasms.
+microRNA-451 regulates macrophage migration inhibitory factor production and proliferation of gastrointestinal cancer cells.
+MicroRNA-500 as a potential diagnostic marker for hepatocellular carcinoma
+MicroRNA-661, a c/EBPalpha target, inhibits metastatic tumor antigen 1 and regulates its functions.
+microRNA-7 inhibits the epidermal growth factor receptor and the Akt pathway and is down-regulated in glioblastoma.
+MicroRNA-7, a homeobox D10 target, inhibits p21-activated kinase 1 and regulates its functions.
+MicroRNA-9 inhibits ovarian cancer cell growth through regulation of NF-kappaB1.
+MicroRNA-9 reduces cell invasion and E-cadherin secretion in SK-Hep-1 cell.
+MicroRNA-dependent regulation of cKit in cutaneous melanoma.
+MicroRNA-mediated inhibition of prostate-derived Ets factor messenger RNA translation affects prostate-derived Ets factor regulatory networks in human breast cancer.
+MicroRNAs 143 and 145 are possible common onco-microRNAs in human cancers.
+MicroRNAs and their potential for translation in prostate cancer.
+MicroRNAs in plasma of pancreatic ductal adenocarcinoma patients as novel blood-based biomarkers of disease
+MiR-107 and MiR-185 can induce cell cycle arrest in human non small cell lung cancer cell lines.
+miR-122 targets an anti-apoptotic gene, Bcl-w, in human hepatocellular carcinoma cell lines.
+MiR-122/cyclin G1 interaction modulates p53 activity and affects doxorubicin sensitivity of human hepatocarcinoma cells.
+miR-124 and miR-137 inhibit proliferation of glioblastoma multiforme cells and induce differentiation of brain tumor stem cells.
+miR-124 and miR-203 are epigenetically silenced tumor-suppressive microRNAs in hepatocellular carcinoma
+MiR-128 up-regulation inhibits Reelin and DCX expression and reduces Neuroblastoma cell motility and invasiveness.
+miR-128b is a potent glucocorticoid sensitizer in MLL-AF4 acute lymphocytic leukemia cells and exerts cooperative effects with miR-221
+miR-15 and miR-16 induce apoptosis by targeting BCL2.
+miR-15a and miR-16 are implicated in cell cycle regulation in a Rb-dependent manner and are frequently deleted or down-regulated in non-small cell lung cancer.
+MiR-15a and miR-16-1 cluster functions in human leukemia.
+miR-15b and miR-16 modulate multidrug resistance by targeting BCL2 in human gastric cancer cells.
+Mir-17-5p regulates breast cancer cell proliferation by inhibiting translation of AIB1 mRNA.
+miR-206 Expression is down-regulated in estrogen receptor alpha-positive human breast cancer.
+MiR-21 indicates poor prognosis in tongue squamous cell carcinomas as an apoptosis inhibitor.
+MiR-21 is an EGFR-regulated anti-apoptotic factor in lung cancer in never-smokers.
+miR-21 microRNA expression in human gastric carcinomas and its clinical association.
+miR-21 plays a pivotal role in gastric cancer pathogenesis and progression.
+miR-21: an androgen receptor-regulated microRNA that promotes hormone-dependent and hormone-independent prostate cancer growth
+miR-21-mediated tumor growth.
+miR-22 inhibits estrogen signaling by directly targeting the estrogen receptor alpha mRNA.
+miR-221 and miR-222 expression affects the proliferation potential of human prostate carcinoma cell lines by targeting p27Kip1.
+MiR-221 controls CDKN1C/p57 and CDKN1B/p27 expression in human hepatocellular carcinoma.
+mir-29 regulates Mcl-1 protein expression and apoptosis.
+miR-296 regulates growth factor receptor overexpression in angiogenic endothelial cells.
+miR-320 targets transferrin receptor 1 (CD71) and inhibits cell proliferation.
+miR-34a inhibits migration and invasion by down-regulation of c-Met expression in human hepatocellular carcinoma cells.
+miR-34b targets cyclic AMP-responsive element binding protein in acute myeloid leukemia.
+miR-449a targets HDAC-1 and induces growth arrest in prostate cancer.
+MIR-451 and Imatinib mesylate inhibit tumor growth of Glioblastoma stem cells.
+miR-93, miR-98, and miR-197 regulate expression of tumor suppressor gene FUS1.
+miRNA deregulation by epigenetic silencing disrupts suppression of the oncogene PLAG1 in chronic lymphocytic leukemia.
+MiRNA expression in urothelial carcinomas: Important roles of miR-10a, miR-222,miR-125b, miR-7 and miR-452 for tumor stage and metastasis, and frequent homozygous losses of miR-31.
+MiRNA-29a regulates the expression of numerous proteins and reduces the invasiveness and proliferation of human carcinoma cell lines
+MYC stimulates EZH2 expression by repression of its negative regulator miR-26a.
+MYC translocation-negative classical Burkitt lymphoma cases: an alternative pathogenetic mechanism involving miRNA deregulation.
+MYCN regulates oncogenic MicroRNAs in Neuroblastoma.
+NF-kappaB-dependent induction of microRNA miR-146, an inhibitor targeted to signaling proteins of innate immune responses.
+NF-kappaB-YY1-miR-29 regulatory circuitry in skeletal myogenesis and rhabdomyosarcoma.
+Oncogenic potential of the miR-106-363 cluster and its implication in human T-cell leukemia.
+Oncogenic role of miR-17-92 cluster in anaplastic thyroid cancer cells.
+Over- and under-expressed microRNAs in human Colorectal Neoplasms.
+p53-mediated activation of miRNA34 candidate tumor-suppressor genes.
+p53-Responsive micrornas 192 and 215 are capable of inducing cell cycle arrest.
+PMID or Related Information
+Polymorphic mature microRNAs from passenger strand of pre-miR-146a contribute to thyroid cancer.
+Post-transcriptional regulation of mouse mu opioid receptor (MOR1) via its 3'untranslated region: a role for microRNA23b.
+Pre-B cell proliferation and lymphoblastic leukemia/high-grade lymphoma in E(mu)-miR155 transgenic mice.
+Profiling microRNA expression in hepatocellular carcinoma reveals microRNA-224 up-regulation and apoptosis inhibitor-5 as a microRNA-224-specific target.
+Prognostic value of mature microRNA-21 and microRNA-205 overexpression in non-small cell lung cancer by quantitative real-time RT-PCR.
+Prognostic Values of microRNAs in Colorectal Neoplasms.
+Programmed cell death 4 (PDCD4) is an important functional target of the microRNA miR-21 in breast cancer cells.
+Quantitative technologies establish a novel microRNA profile of chronic lymphocytic leukemia.
+Radiation modulation of microRNA in prostate cancer cell lines.
+RAS is regulated by the let-7 microRNA family.
+Real-time expression profiling of microRNA precursors in human cancer cell lines.
+Reduced accumulation of specific microRNAs in colorectal neoplasia.
+Reduced expression of the let-7 microRNAs in human lung cancers in association with shortened postoperative survival.
+Regulation of cyclin dependent kinase 6 by microRNA 124 in medulloblastoma.
+Regulation of epidermal growth factor receptor signaling in human cancer cells by microRNA-7.
+Regulation of IKKbeta by miR-199a affects NF-kappaB activity in ovarian cancer cells.
+Regulation of miR-200 family microRNAs and ZEB transcription factors in ovarian cancer: Evidence supporting a mesothelial-to-epithelial transition
+Regulation of p27Kip1 by miRNA 221/222 in glioblastoma.
+Regulation of pri-microRNA BIC transcription and processing in Burkitt lymphoma.
+Regulation of RUNX3 Tumor Suppressor Gene Expression in Cutaneous Melanoma.
+Regulation of the cell cycle gene, BTG2, by miR-21 in human Laryngeal Neoplasms.
+Restoration of tumour suppressor hsa-miR-145 inhibits cancer cell growth in lung  adenocarcinoma patients with epidermal growth factor receptor mutation.
+Retinoic Acid Receptor Antagonists Inhibit miR-10a Expression and Block Metastatic Behavior of Pancreatic Neoplasms
+Role of microRNA-143 in Fas-mediated apoptosis in human T-cell leukemia Jurkat cells.
+Role of microRNA-155 at early stages of hepatocarcinogenesis induced by choline-deficient and amino acid-defined diet in C57BL/6 mice.
+Role of miR-143 targeting KRAS in colorectal tumorigenesis.
+Role of the miR-106b-25 microRNA cluster in hepatocellular carcinoma.
+Roles for microRNAs, miR-93 and miR-130b, and tumor protein 53-induced nuclear protein 1 tumor suppressor in cell growth dysregulation by human T-cell lymphotrophic virus 1.
+Significance of Plk1 regulation by miR-100 in human nasopharyngeal cancer
+Small RNAs analysis in CLL reveals a deregulation of miRNA expression and novel miRNA candidates of putative relevance in CLL pathogenesis.
+Specific activation of microRNA106b enables the p73 apoptotic response in chronic lymphocytic leukemia by targeting the ubiquitin ligase, Itch for degradation.
+Specific activation of microRNA-127 with downregulation of the proto-oncogene BCL6 by chromatin-modifying drugs in human cancer cells.
+Specific expression of miR-17-5p and miR-127 in testicular and central nervous system diffuse large B-cell lymphoma.
+Specific microRNAs are downregulated in human thyroid anaplastic carcinomas.
+Suppression of non-small cell lung tumor development by the let-7 microRNA family.
+Systemic Delivery of Synthetic MicroRNA-16 Inhibits the Growth of Metastatic Prostate Tumors via Downregulation of Multiple Cell-cycle Genes
+Tcl1 expression in chronic lymphocytic leukemia is regulated by miR-29 and miR-181.
+The cell growth suppressor, mir-126, targets IRS-1.
+The c-myb proto-oncogene and microRNA-15a comprise an active autoregulatory feedback loop in human hematopoietic cells.
+The epidermal growth factor receptor responsive miR-125a represses mesenchymal morphology in ovarian cancer cells
+The expression profile of microRNAs in a model of
+The human let-7a-3 locus contains an epigenetically regulated microRNA gene with oncogenic function.
+The interplay between microRNAs and the neurotrophin receptor tropomyosin-related kinase C controls proliferation of human Neuroblastoma cells.
+The let-7 microRNA represses cell proliferation pathways in human cells.
+The micro-ribonucleic acid (miRNA) miR-206 targets the human estrogen receptor-alpha (ERalpha) and represses ERalpha messenger RNA and protein expression in breast cancer cell lines.
+The MicroRNA let-7a modulates interleukin-6-dependent STAT-3 survival signaling in malignant human cholangiocytes.
+The microRNAs miR-373 and miR-520c promote tumour invasion and metastasis.
+The miR-15a-miR-16-1 cluster controls prostate cancer by targeting multiple oncogenic activities.
+The miR-17/92 polycistron is up-regulated in sonic hedgehog-driven medulloblastomas and induced by N-myc in sonic hedgehog-treated cerebellar neural precursors.
+The miR-17~92 cluster collaborates with the Sonic Hedgehog pathway in medulloblastoma.
+The miR-18a* microRNA functions as a potential tumor suppressor by targeting on K-Ras.
+The miR-200 family and miR-205 regulate epithelial to mesenchymal transition by targeting ZEB1 and SIP1.
+The miR-200 family inhibits epithelial-mesenchymal transition and cancer cell migration by direct targeting of E-cadherin transcriptional repressors ZEB1 and ZEB2.
+The muscle-specific microRNA miR-206 blocks human rhabdomyosarcoma growth in
+The MYCN oncogene is a direct target of miR-34a.
+The noncoding RNA, miR-126, suppresses the growth of neoplastic cells by targeting phosphatidylinositol 3-kinase signaling and is frequently lost in colon cancers.
+The oncogenic microRNA-27a targets genes that regulate specificity protein transcription factors and the G2-M checkpoint in MDA-MB-231 breast cancer cells.
+The promyelocytic leukemia zinc finger-microRNA-221/-222 pathway controls melanoma progression through multiple oncogenic mechanisms.
+The PTEN-regulating microRNA miR-26a is amplified in high-grade Glioma and facilitates Gliomagenesis in vivo.
+The putative tumor suppressor microRNA-101 modulates the cancer epigenome by repressing the polycomb group protein EZH2.
+The role of microRNA and other non-coding RNA in the pathogenesis of chronic lymphocytic leukemia.
+The role of microRNA expression pattern in human intrahepatic Cholangiocarcinoma.
+The role of microRNA-221 and microRNA-222 in androgen-independent prostate cancer
+The tumor suppressor microRNA let-7 represses the HMGA2 oncogene.
+Therapeutic microRNA delivery suppresses tumorigenesis in a murine liver cancer model.
+Transactivation of miR-34a by p53 broadly influences gene expression and promotes apoptosis.
+Transcriptional repression of microRNA genes by PML-RARA increases expression of  key cancer proteins in acute promyelocytic leukemia.
+Truncation in CCND1 mRNA alters miR-16-1 regulation in mantle cell lymphoma.
+Tumor protein 53-induced nuclear protein 1 expression is repressed by miR-155, and its restoration inhibits pancreatic tumor development.
+Tumor-suppressive miR-34a induces senescence-like growth arrest through modulation of the E2F pathway in human colon cancer cells.
+Tumour invasion and metastasis initiated by microRNA-10b in breast cancer.
+Unique microRNA molecular profiles in lung cancer diagnosis and prognosis.
+Up-regulated microRNA-143 transcribed by nuclear factor kappa B enhances hepatocarcinoma metastasis by repressing fibronectin expression.
+Up-regulation of microRNA in bladder tumor tissue is not common.
+Up-regulation of micro-RNA-221 (miRNA-221; chr Xp11.3) and caspase-3 accompanies down-regulation of the survivin-1 homolog BIRC1 (NAIP) in glioblastoma multiforme(GBM).
+Up-regulation of miR-21 by HER2/neu Signaling Promotes Cell Invasion.
+Upregulation of miR-23a approximately 27a approximately 24 decreases transforming growth factor-beta-induced tumor-suppressive activities in human hepatocellular carcinoma cells.
+Widespread deregulation of microRNA expression in human prostate cancer.
+Widespread estrogen-dependent repression of micrornas involved in breast tumor cell growth
+Xenoestrogen-Induced Epigenetic Repression of microRNA-9-3 in Breast Epithelial Cells.
