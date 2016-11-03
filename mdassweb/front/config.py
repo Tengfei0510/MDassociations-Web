@@ -11,9 +11,11 @@ db_name = 'rnadb'
 mirna = 'mirna'
 cancer = 'cancer'
 collection_name = 'rna_cancer'
+rcnmn = 'rcnmn'
 
 db_client = MongoClient(MONGODB_HOST, MONGODB_PORT)
 db = db_client[db_name]
 mirna_collection = db[mirna]
 cancer_collection = db[cancer]
 rna_collection = db[collection_name]
+rcnmn_collection = db[rcnmn]
