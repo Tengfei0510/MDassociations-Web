@@ -1,7 +1,8 @@
+import pymongo
 from django.shortcuts import render
 
 from .config import (mirna_collection, cancer_collection,
-                     rna_collection)
+                     rna_collection, rcnmn_collection)
 
 
 # Create your views here.
@@ -60,6 +61,32 @@ def browse_view(request):
 
     return render(request, template, {
         'mirnas': mirnas,
+        'cancers': cancers,
+        'data': data,
+    })
+
+
+def rcnmc_view(request):
+    req_cancer = request.GET.get('cancer', None)
+    cancers_query = cancer_collection.find()
+    cancers = []
+    for cancer in cancers_query:
+        cancers.append(cancer['cancer'])
+
+    data = []
+    template = 'front/rcnmn.html'
+    if req_cancer:
+        cancer_query = rcnmn_collection.find({
+            'cancer': {'$eq': req_cancer}}).sort(
+            'score', pymongo.DESCENDING)
+
+        for cancer in cancer_query:
+            temp = dict()
+            temp['mirna'] = cancer['mirna']
+            temp['score'] = cancer['score']
+            data.append(temp)
+
+    return render(request, template, {
         'cancers': cancers,
         'data': data,
     })

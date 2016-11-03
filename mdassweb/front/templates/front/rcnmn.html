@@ -1,0 +1,73 @@
+{% extends 'front/index.html' %}
+
+{% block title %}
+    Browse
+{% endblock %}
+
+{% block content %}
+    <div id="main">
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-7">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 well no-padding" style="height: 700px; margin-left: 18px; overflow-y: auto;">
+                <ul class="nav nav-list nav-menu-list-style">
+                    <li><label class="tree-toggle nav-header glyphicon-icon-rpad">
+                        <span class="glyphicon glyphicon-folder-close m5"></span> RCNMC
+                        <span class="menu-collapsible-icon glyphicon glyphicon-chevron-down"></span></label>
+                        <ul class="nav nav-list tree bullets">
+                            <li><label class="tree-toggle nav-header">Cancer</label>
+                                <ul class="nav nav-list tree">
+                                    {% for cancer in cancers %}
+                                        <li><a href="/front/rcnmc/?cancer={{ cancer }}">{{ cancer }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8" style="height: 700px; overflow-y: auto;">
+                {% if data|length > 0  %}
+                    <div class="row">
+                        <div class="col-md-11">
+                            <h4>Cancer name: <span style="color: red">{{ request.GET.cancer }}</span></h4>
+                        </div>
+                    </div>
+                    <table class="table table-bordered table-responsive table-hover">
+                        <thead>
+                            <tr>
+                                <td>Rank</td>
+                                <td>MiRNA Name</td>
+                                <td>RCNMC Score</td>
+                            </tr>
+                        </thead>
+                        {% for d in data %}
+                        <tr>
+                            <td>{{ forloop.counter }}</td>
+                            <td>{{ d.mirna }}</td>
+                            <td>{{ d.score }}</td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script type="application/javascript">
+        $(document).ready(function () {
+            $('.tree-toggle').click(function () {
+                $(this).parent().children('ul.tree').toggle(200);
+            });
+            $(function () {
+                $('.tree-toggle').parent().children('ul.tree').toggle(200);
+            });
+        });
+    </script>
+{% endblock %}
