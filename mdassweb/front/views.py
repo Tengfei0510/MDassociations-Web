@@ -14,6 +14,10 @@ def about_view(request):
     return render(request, 'front/about.html')
 
 
+def link_view(request):
+    return render(request, 'front/links.html')
+
+
 def browse_view(request):
     req_cancer = request.GET.get('cancer', None)
     req_mirna = request.GET.get('mirna', None)
