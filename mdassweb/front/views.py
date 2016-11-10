@@ -94,3 +94,35 @@ def rcnmc_view(request):
         'cancers': cancers,
         'data': data,
     })
+
+
+def kegg_view(request):
+    id = request.GET.get('id', None)
+    cancers = [
+        'Acute myeloid leukemia',
+        'Basal cell carcinoma',
+        'Bladder cancer',
+        'Breast cancer',
+        'Chronic myeloid leukemia',
+        'Colorectal cancer',
+        'Endometrial cancer',
+        'Glioma',
+        'Melanoma',
+        'Non-small cell lung cancer',
+        'Pancreatic cancer',
+        'Prostate cancer',
+        'Renal cell carcinoma',
+        'Small cell lung cancer',
+        'Thyroid cancer'
+    ]
+    base_src = 'http://ogfcjlkt7.bkt.clouddn.com/'
+    image_src = None
+    cancer = None
+    if id:
+        cancer = cancers[int(id) - 1]
+        image_src = base_src + cancer + '.png'
+    return render(request, 'front/kegg.html', {
+        'cancers': cancers,
+        'cancer': cancer,
+        'image_src': image_src
+    })

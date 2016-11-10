@@ -15,4 +15,5 @@ urlpatterns = [
     url(r'^browse/$', views.browse_view, name='browse'),
     url(r'^links/$', views.link_view, name='links'),
     url(r'^rcnmc/$', views.rcnmc_view, name='rcnmn'),
+    url(r'^kegg/$', views.kegg_view, name='kegg'),
 ]
