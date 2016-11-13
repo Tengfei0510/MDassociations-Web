@@ -33,11 +33,12 @@
             <div class="col-md-8" style="height: 700px; overflow-y: auto;">
                 <div class="row">
                     {% if cancer %}
-                    <div class="col-md-11 col-md-offset-1">
-                        <h4>Cancer name: <span style="color: red">{{ cancer }}</span></h4>
+                    <div class="col-md-12">
+                        <h5>Cancer name: <span style="color: red">{{ cancer }}</span></h5>
+                        <p>{{ cancer_desc }}</p>
                     </div>
-                    <div class="col-md-11 col-md-offset-1">
-                        <img id="cancer_img" class="img-thumbnail" style="width: 600px; height: 600px;"
+                    <div class="col-md-12">
+                        <img id="cancer_img" class="img-thumbnail" style="width: 700px; height: 700px;"
                              src="{{ image_src }}"
                              data-high-res-src="{{ image_src }}">
                     </div>

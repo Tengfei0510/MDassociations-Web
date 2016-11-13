@@ -4,6 +4,7 @@ from django.shortcuts import render
 from .config import (mirna_collection, cancer_collection,
                      rna_collection, rcnmn_collection)
 
+from .constant import CANCER_DESC
 
 # Create your views here.
 def index_view(request):
@@ -118,11 +119,14 @@ def kegg_view(request):
     base_src = 'http://ogfcjlkt7.bkt.clouddn.com/'
     image_src = None
     cancer = None
+    cancer_desc = None
     if id:
         cancer = cancers[int(id) - 1]
+        cancer_desc = CANCER_DESC[int(id) - 1]
         image_src = base_src + cancer + '.png'
     return render(request, 'front/kegg.html', {
         'cancers': cancers,
         'cancer': cancer,
+        'cancer_desc': cancer_desc,
         'image_src': image_src
     })
