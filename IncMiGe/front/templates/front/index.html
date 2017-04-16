@@ -7,31 +7,34 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Inc2Mi2Gene</title>
+    {% block lib_css %}
     <!-- Bootstrap Core CSS -->
     <link href="/static/front/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Additional fonts for this theme -->
     <link href="/static/front/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this theme -->
     <link href="/static/front/css/clean-blog.min.css" rel="stylesheet">
-
     <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
     <style>
         .navbar-toggler {
             z-index: 1;
         }
-
         @media (max-width: 576px) {
             nav > .container {
                 width: 100%;
             }
         }
     </style>
+    {% endblock %}
+
+    {% block custom_css  %}
+    {% endblock %}
 
 </head>
 
 <body>
 
+{% block nav %}
 <!-- Navigation -->
 <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
     <div class="container">
@@ -40,7 +43,7 @@
                 aria-label="Toggle navigation">
             Menu <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand page-scroll" href="index.html">Inc2Mi2Ge</a>
+        <a class="navbar-brand page-scroll" href="/">Inc2Mi2Ge</a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -53,13 +56,15 @@
                     <a class="nav-link page-scroll" href="post.html">Sample Post</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="contact.html">Contact</a>
+                    <a class="nav-link page-scroll" href="contact">Contact</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+{% endblock %}
 
+{% block header %}
 <!-- Page Header -->
 <header class="intro-header">
     <div class="container" style="background-image: url('/static/front/img/home-bg.jpg')">
@@ -73,7 +78,9 @@
         </div>
     </div>
 </header>
+{% endblock %}
 
+{% block content %}
 <!-- Main Content -->
 <div class="container">
     <div class="row">
@@ -101,7 +108,9 @@
     </div>
 </div>
 <hr>
+{% endblock %}
 
+{% block footer %}
 <!-- Footer -->
 <footer>
     <div class="container">
@@ -112,7 +121,9 @@
         </div>
     </div>
 </footer>
+{% endblock %}
 
+{% block lib_js %}
 <!-- jQuery Version 3.1.1 -->
 <script src="/static/front/lib/jquery/jquery.js"></script>
 
@@ -124,7 +135,10 @@
 
 <!-- Theme JavaScript -->
 <script src="/static/front/js/clean-blog.min.js"></script>
+{% endblock %}
 
+{% block custom_js %}
+{% endblock %}
 </body>
 
 </html>
