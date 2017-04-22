@@ -1,0 +1,83 @@
+{% extends 'front/index.html' %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="row" style="border: 1px solid #E0E0E0;">
+            <div class="col-md-2" style="height: 700px; overflow-y: auto;">
+                <ul id="treeview">
+                    <li data-icon-cls="fa fa-inbox" data-expanded="true">MiRna
+                        <ul>
+                            {% for rna in mirnas %}#}
+                                <li><a href="/front/search/?mirna={{ rna }}">{{ rna }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li data-icon-cls="fa fa-bandcamp">LncRna
+                        <ul>
+                            {% for rna in lncrnas %}#}
+                                <li><a href="/front/search/?lncrna={{ rna }}">{{ rna }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li data-icon-cls="fa fa-bars">Gene
+                        <ul>
+                            {% for gene in genes %}#}
+                                <li><a href="/front/search/?gene={{ gene }}">{{ gene }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li data-icon-cls="fa fa-info-circle">Disease
+                        <ul>
+                            {% for disease in diseases %}#}
+                                <li><a href="/front/search/?disease={{ disease }}">{{ disease }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9" style="height: 700px; overflow-y: auto; font-size: 14px; margin-left: 30px; margin-top: 10px;">
+                {% if data|length > 0 %}
+                    <table class="table table-bordered table-responsive table-hover">
+                        <thead class="thead-inverse">
+                        <tr>
+                            <td>LncRNA</td>
+                            <td>MiRNA</td>
+                            <td>Gene</td>
+                            <td>Journal</td>
+                            <td>PubMed_ID</td>
+                            <td>Disease/Tissue</td>
+                            <td>Title</td>
+                        </tr>
+                        </thead>
+                        {% for d in data %}
+                            <tr>
+                                <td>{{ d.LncRNA }}</td>
+                                <td>{{ d.MiRNA }}</td>
+                                <td>{{ d.Gene }}</td>
+                                <td>{{ d.Journal }}</td>
+                                <td>{{ d.PubMed_ID }}</td>
+                                <td>{{ d.PubMed_ID }}</td>
+                                <td>{{ d.Title }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block custom_js %}
+    <!-- you need to include the ShieldUI CSS and JS assets in order for the TreeView widget to work -->
+    <link rel="stylesheet" type="text/css"
+          href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css"/>
+    <script type="text/javascript"
+            src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $("#treeview").shieldTreeView();
+        });
+    </script>
+{% endblock %}

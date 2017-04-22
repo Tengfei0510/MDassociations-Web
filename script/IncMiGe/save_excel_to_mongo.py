@@ -7,9 +7,9 @@
 import pyexcel as pe
 from pymongo import MongoClient
 
-MONGODB_HOST = '120.27.39.12'
+MONGODB_HOST = '127.0.0.1'
 MONGODB_PORT = 27017
-db_name = 'INCMIM'
+db_name = 'LncCeRBase'
 collection_name = 'LMM'
 
 db_client = MongoClient(MONGODB_HOST, MONGODB_PORT)
@@ -28,11 +28,18 @@ def parse_excel_to_save():
                 'Year': record['Year'],
                 'Gene': record['Gene'],
                 'LncRNA': record['LncRNA'],
-                'Disease/Tissue': record['Disease/Tissue'],
+                'Disease_Tissue': record['Disease/Tissue'],
                 'MiRNA': record['MiRNA']
             })
         except:
             print('exception')
+
+
+def create_index():
+    collection.create_index("MiRNA")
+    collection.create_index('LncRNA')
+    collection.create_index('Gene')
+    collection.create_index('Disease_Tissue')
 
 
 def clear_db():
@@ -40,4 +47,6 @@ def clear_db():
 
 
 if __name__ == '__main__':
+    clear_db()
     parse_excel_to_save()
+    create_index()

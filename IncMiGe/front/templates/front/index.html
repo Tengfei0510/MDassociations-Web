@@ -6,28 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Inc2Mi2Gene</title>
+    <title>LncCeRBase</title>
     {% block lib_css %}
-    <!-- Bootstrap Core CSS -->
-    <link href="/static/front/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Additional fonts for this theme -->
-    <link href="/static/front/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- Custom styles for this theme -->
-    <link href="/static/front/css/clean-blog.min.css" rel="stylesheet">
-    <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
-    <style>
-        .navbar-toggler {
-            z-index: 1;
-        }
-        @media (max-width: 576px) {
-            nav > .container {
-                width: 100%;
+        <!-- Bootstrap Core CSS -->
+        <link href="/static/front/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Additional fonts for this theme -->
+        <link href="/static/front/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!-- Custom styles for this theme -->
+        <link href="/static/front/css/clean-blog.min.css" rel="stylesheet">
+        <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
+        <style>
+            .navbar-toggler {
+                z-index: 1;
             }
-        }
-    </style>
+
+            @media (max-width: 576px) {
+                nav > .container {
+                    width: 100%;
+                }
+            }
+        </style>
     {% endblock %}
 
-    {% block custom_css  %}
+    {% block custom_css %}
     {% endblock %}
 
 </head>
@@ -35,106 +36,106 @@
 <body>
 
 {% block nav %}
-<!-- Navigation -->
-<nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
-    <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-            Menu <i class="fa fa-bars"></i>
-        </button>
-        <a class="navbar-brand page-scroll" href="/">Inc2Mi2Ge</a>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="post.html">Sample Post</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="contact">Contact</a>
-                </li>
-            </ul>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="/">LncCeRBase</a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="/front">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="/front/search">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 {% endblock %}
 
 {% block header %}
-<!-- Page Header -->
-<header class="intro-header">
-    <div class="container" style="background-image: url('/static/front/img/home-bg.jpg')">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                <div class="site-heading">
-                    <h1>IncRNA2MiRNA2Gene</h1>
-                    <span class="subheading">A Blog Theme by Start Bootstrap</span>
+    <!-- Page Header -->
+    <header class="intro-header">
+        <div class="container" style="background-image: url('/static/front/img/home-bg.jpg'); max-height: 300px;">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                    <div class="site-heading">
+                        <h2>LncCeRBase</h2>
+                        <span class="subheading">The Web Site for LncCeRBase</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 {% endblock %}
 
 {% block content %}
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="post-preview">
-            <a href="post.html">
-                <h2 class="post-title">
-                    Man must explore, and this is exploration at its greatest
-                </h2>
-                <h3 class="post-subtitle">
-                    Problems look mighty small from 150 miles up
-                </h3>
-            </a>
-            <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2017</p>
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">
+                        Man must explore, and this is exploration at its greatest
+                    </h2>
+                    <h3 class="post-subtitle">
+                        Problems look mighty small from 150 miles up
+                    </h3>
+                </a>
+                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2017</p>
+            </div>
+            <hr>
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">
+                        I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+                    </h2>
+                </a>
+                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2017</p>
+            </div>
+            <hr>
         </div>
-        <hr>
-        <div class="post-preview">
-            <a href="post.html">
-                <h2 class="post-title">
-                    I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-                </h2>
-            </a>
-            <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2017</p>
-        </div>
-        <hr>
     </div>
-</div>
-<hr>
+    <hr>
 {% endblock %}
 
 {% block footer %}
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row ">
-            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                <p class="copyright text-muted">Copyright &copy; 2017.</p>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                    <p class="copyright text-muted">Copyright &copy; 2017.</p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 {% endblock %}
 
 {% block lib_js %}
-<!-- jQuery Version 3.1.1 -->
-<script src="/static/front/lib/jquery/jquery.js"></script>
+    <!-- jQuery Version 3.1.1 -->
+    <script src="/static/front/lib/jquery/jquery.js"></script>
 
-<!-- Tether -->
-<script src="/static/front/lib/tether/tether.min.js"></script>
+    <!-- Tether -->
+    <script src="/static/front/lib/tether/tether.min.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="/static/front/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/static/front/lib/bootstrap/js/bootstrap.min.js"></script>
 
-<!-- Theme JavaScript -->
-<script src="/static/front/js/clean-blog.min.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="/static/front/js/clean-blog.min.js"></script>
 {% endblock %}
 
 {% block custom_js %}
