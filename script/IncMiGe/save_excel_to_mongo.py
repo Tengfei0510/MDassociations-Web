@@ -29,7 +29,8 @@ def parse_excel_to_save():
                 'Gene': record['Gene'],
                 'LncRNA': record['LncRNA'],
                 'Disease_Tissue': record['Disease/Tissue'],
-                'MiRNA': record['MiRNA']
+                'MiRNA': record['MiRNA'],
+                'Pathway_Name': record['Pathway Name']
             })
         except:
             print('exception')

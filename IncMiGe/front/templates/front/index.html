@@ -13,7 +13,7 @@
         <!-- Additional fonts for this theme -->
         <link href="/static/front/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <!-- Custom styles for this theme -->
-        <link href="/static/front/css/clean-blog.min.css" rel="stylesheet">
+        <link href="/static/front/css/clean-blog.css" rel="stylesheet">
         <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
         <style>
             .navbar-toggler {
@@ -50,9 +50,9 @@
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="/front">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="about.html">About</a>
-                    </li>
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link page-scroll" href="about.html">About</a>#}
+{#                    </li>#}
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="/front/search">Search</a>
                     </li>
@@ -72,8 +72,8 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
                     <div class="site-heading">
-                        <h2>LncCeRBase</h2>
-                        <span class="subheading">The Web Site for LncCeRBase</span>
+                        <h3>LncCeRBase</h3>
+                        <span class="subheading">Welcome to the LncCeRBase DataBase!</span>
                     </div>
                 </div>
             </div>
@@ -86,29 +86,35 @@
     <div class="container">
         <div class="row">
             <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">
-                        Man must explore, and this is exploration at its greatest
-                    </h2>
-                    <h3 class="post-subtitle">
-                        Problems look mighty small from 150 miles up
-                    </h3>
-                </a>
-                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2017</p>
+                <p class="post-meta">
+                    Long non-coding RNAs are a kind of endogenous molecules with a length greater than 200 nucleotides and with no coding potential.
+                    The studies show that lncRNAs can interact with the miRNAs as a competing endogenous RNAs (ceRNAs) to regulate the expression of target genes.
+                    What’s more, the ceRNAs can play an importance role in the initiation and progression of a lot of cancers. However, there is no database collecting experimental verification ceRNA data for human beings.
+                    LncCeRBase database which integrated 331 lncRNA-miRNA-miRNA interactions, including 90 lncRNAs, 176 miRNAs and 195 genes from 236 publications. A growing number of studies shown that the interaction between lncRNA and miRNA would provide new ideas in diagnosis and treatment of complex disease.
+                    LncCeRBase can help us to understand the regulatory mechanism of lncRNA.
+                </p>
+                <p class="post-meta">
+                    In LncCeRBase, Users Can </br>
+                    - Browse the experimentally supported lncRNA-miRNA-miRNA associations by different items.</br>
+                    - Download the experimentally supported lncRNA-miRNA-miRNA associations data(<a href="/front/download">excel</a>).</br>
+                    And LncCeRBase database will be updated timely.
+                </p>
             </div>
             <hr>
-            <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">
-                        I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-                    </h2>
-                </a>
-                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2017</p>
-            </div>
-            <hr>
+{#            <div class="post-preview">#}
+{#                <a href="post.html">#}
+{#                    <h2 class="post-title">#}
+{#                        I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.#}
+{#                    </h2>#}
+{#                </a>#}
+{#                <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2017</p>#}
+{#            </div>#}
+{#            <hr>#}
         </div>
     </div>
-    <hr>
+{#    <div style="margin-top: 80px;">#}
+{#    </div>#}
+    <hr style="margin-top: 150px;">
 {% endblock %}
 
 {% block footer %}

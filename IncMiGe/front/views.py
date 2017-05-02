@@ -1,3 +1,6 @@
+import os
+
+from django.http import StreamingHttpResponse
 from django.shortcuts import render
 
 from .util import query_select_items, query_search_item
@@ -48,6 +51,7 @@ def search_view(request):
             temp['Journal'] = d['Journal']
             temp['Title'] = d['Title']
             temp['PubMed_ID'] = d['PubMed_ID']
+            temp['Pathway_Name'] = d['Pathway_Name']
             data.append(temp)
     return render(request, 'front/search.html',
                   {
@@ -57,3 +61,24 @@ def search_view(request):
                       'diseases': diseases,
                       'data': data
                   })
+
+
+def download(req):
+    excel_file_name = 'lncRNA-miRNA-mRNA.xlsx'
+
+    def file_iterator(file_name, chunk_size=512):
+        with open(file_name, 'rb') as f:
+            while True:
+                c = f.read(chunk_size)
+                if c:
+                    yield c
+                else:
+                    break
+            f.close()
+
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    the_file_name = dir_path + '/' + excel_file_name
+    response = StreamingHttpResponse(file_iterator(the_file_name))
+    response['Content-Type'] = 'application/octet-stream'
+    response['Content-Disposition'] = 'attachment;filename="{0}"'.format(excel_file_name)
+    return response

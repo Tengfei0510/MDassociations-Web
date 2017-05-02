@@ -6,7 +6,7 @@
         <div class="row" style="border: 1px solid #E0E0E0;">
             <div class="col-md-2" style="height: 700px; overflow-y: auto;">
                 <ul id="treeview">
-                    <li data-icon-cls="fa fa-inbox" data-expanded="true">MiRna
+                    <li data-icon-cls="fa fa-inbox">MiRna
                         <ul>
                             {% for rna in mirnas %}#}
                                 <li><a href="/front/search/?mirna={{ rna }}">{{ rna }}</a></li>
@@ -36,7 +36,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-9" style="height: 700px; overflow-y: auto; font-size: 14px; margin-left: 30px; margin-top: 10px;">
+            <div class="col-md-10" style="height: 700px; overflow-y: auto; font-size: 14px; margin-top: 10px;">
                 {% if data|length > 0 %}
                     <table class="table table-bordered table-responsive table-hover">
                         <thead class="thead-inverse">
@@ -44,8 +44,9 @@
                             <td>LncRNA</td>
                             <td>MiRNA</td>
                             <td>Gene</td>
+                            <td>Pathway Name</td>
                             <td>Journal</td>
-                            <td>PubMed_ID</td>
+                            <td>PubMed ID</td>
                             <td>Disease/Tissue</td>
                             <td>Title</td>
                         </tr>
@@ -55,9 +56,15 @@
                                 <td>{{ d.LncRNA }}</td>
                                 <td>{{ d.MiRNA }}</td>
                                 <td>{{ d.Gene }}</td>
+                                <td>{{ d.Pathway_Name }}</td>
                                 <td>{{ d.Journal }}</td>
-                                <td>{{ d.PubMed_ID }}</td>
-                                <td>{{ d.PubMed_ID }}</td>
+                                <td>
+                                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term={{ d.PubMed_ID }}"
+                                       target="_blank">
+                                        {{ d.PubMed_ID }}
+                                    </a>
+                                </td>
+                                <td>{{ d.Disease_Tissue }}</td>
                                 <td>{{ d.Title }}</td>
                             </tr>
                         {% endfor %}
