@@ -14,6 +14,7 @@
         <link href="/static/front/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <!-- Custom styles for this theme -->
         <link href="/static/front/css/clean-blog.css" rel="stylesheet">
+        <link href="/static/front/css/new_css.css" rel="stylesheet">
         <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
         <style>
             .navbar-toggler {
@@ -37,7 +38,7 @@
 
 {% block nav %}
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav" style="color: #333333">
         <div class="container">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                     data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -68,7 +69,7 @@
 {% block header %}
     <!-- Page Header -->
     <header class="intro-header">
-        <div class="container" style="background-image: url('/static/front/img/home-bg.jpg'); max-height: 300px;">
+        <div class="container" id="header_background">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
                     <div class="site-heading">
