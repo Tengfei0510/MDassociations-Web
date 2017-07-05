@@ -86,3 +86,8 @@ def download(request):
         response['Content-Type'] = 'application/octet-stream'
         response['Content-Disposition'] = 'attachment;filename="{0}"'.format(excel_file_name)
         return response
+
+
+def links(request):
+
+    return render(request, 'front/links.html')

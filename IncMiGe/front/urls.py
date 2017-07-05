@@ -13,5 +13,6 @@ urlpatterns = [
     url(r'^$', views.index_view, name='index'),
     url(r'^contact$', views.contact_view, name='contact'),
     url(r'^search/$', views.search_view, name='search'),
-    url(r'^download$', views.download, name='download')
+    url(r'^download$', views.download, name='download'),
+    url(r'^links', views.links, name='links'),
 ]

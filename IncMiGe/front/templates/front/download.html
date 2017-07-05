@@ -1,89 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>LncCeRBase</title>
-    {% block lib_css %}
-        <!-- Bootstrap Core CSS -->
-        <link href="/static/front/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Additional fonts for this theme -->
-        <link href="/static/front/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <!-- Custom styles for this theme -->
-        <link href="/static/front/css/clean-blog.css" rel="stylesheet">
-        <link href="/static/front/css/new_css.css" rel="stylesheet">
-        <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
-        <style>
-            .navbar-toggler {
-                z-index: 1;
-            }
-
-            @media (max-width: 576px) {
-                nav > .container {
-                    width: 100%;
-                }
-            }
-        </style>
-    {% endblock %}
-
-    {% block custom_css %}
-    {% endblock %}
-
-</head>
-
-<body>
-
-{% block nav %}
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav" style="color: #333333">
-        <div class="container">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                Menu <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand page-scroll" href="/">LncCeRBase</a>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="/front">Home</a>
-                    </li>
-                    {#                    <li class="nav-item">#}
-                    {#                        <a class="nav-link page-scroll" href="about.html">About</a>#}
-                    {#                    </li>#}
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="/front/search">Browse</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="/front/download?p=page">Download</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="/front/contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-{% endblock %}
-
-{% block header %}
-    <!-- Page Header -->
-    <header class="intro-header">
-        <div class="container" id="header_background">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                    <div class="site-heading">
-                        <h3>LncCeRBase</h3>
-                        <span class="subheading">Welcome to the LncCeRBase DataBase!</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-{% endblock %}
+{% extends 'front/index.html' %}
 
 {% block content %}
     <!-- Main Content -->
@@ -92,22 +7,12 @@
             <div class="post-preview">
 
                 <p class="post-meta">
-                    In LncCeRBase, Users Can </br>
-                    - Browse the experimentally supported lncRNA-miRNA-miRNA associations by different items.</br>
-                    - Download the experimentally supported lncRNA-miRNA-miRNA associations data(<a
+                    Users Can download the experimentally supported lncRNA-miRNA-miRNA associations data
+                    in the LncCeRBase download page.</br>
+                    The experimentally supported lncRNA-miRNA-miRNA associations data(<a
                         href="/front/download">excel</a>).</br>
-                    And LncCeRBase database will be updated timely.
                 </p>
-                <p class="post-meta">
-                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=PceRBase%3A+a+database+of+plant+competing+endogenous+RNA" target="_blank"
-                    >PceRBase: a database of plant competing endogenous RNA.</a> </br>
 
-                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=miRSponge+a+manually" target="_blank"
-                    >miRSponge: a manually curated database for experimentally supported miRNA sponges and ceRNAs.</a> </br>
-
-                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=LnCeDB" target="_blank"
-                    >lnCeDB: database of human long noncoding RNA acting as competing endogenous RNA.</a>
-                </p>
             </div>
             <hr>
         </div>
@@ -116,37 +21,3 @@
     {#    </div>#}
     <hr style="margin-top: 50px;">
 {% endblock %}
-
-{% block footer %}
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                    <p class="copyright text-muted">Copyright &copy; 2017.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-{% endblock %}
-
-{% block lib_js %}
-    <!-- jQuery Version 3.1.1 -->
-    <script src="/static/front/lib/jquery/jquery.js"></script>
-
-    <!-- Tether -->
-    <script src="/static/front/lib/tether/tether.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/static/front/lib/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="/static/front/js/clean-blog.min.js"></script>
-{% endblock %}
-
-{% block custom_js %}
-{% endblock %}
-</body>
-
-</html>
-
