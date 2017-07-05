@@ -63,22 +63,26 @@ def search_view(request):
                   })
 
 
-def download(req):
-    excel_file_name = 'lncRNA-miRNA-mRNA.xlsx'
+def download(request):
+    p = request.GET.get('p', None)
+    if p == 'page':
+        return render(request, 'front/download.html')
+    else:
+        excel_file_name = 'lncRNA-miRNA-mRNA.xlsx'
 
-    def file_iterator(file_name, chunk_size=512):
-        with open(file_name, 'rb') as f:
-            while True:
-                c = f.read(chunk_size)
-                if c:
-                    yield c
-                else:
-                    break
-            f.close()
+        def file_iterator(file_name, chunk_size=512):
+            with open(file_name, 'rb') as f:
+                while True:
+                    c = f.read(chunk_size)
+                    if c:
+                        yield c
+                    else:
+                        break
+                f.close()
 
-    dir_path = os.path.dirname(os.path.realpath(__file__))
-    the_file_name = dir_path + '/' + excel_file_name
-    response = StreamingHttpResponse(file_iterator(the_file_name))
-    response['Content-Type'] = 'application/octet-stream'
-    response['Content-Disposition'] = 'attachment;filename="{0}"'.format(excel_file_name)
-    return response
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        the_file_name = dir_path + '/' + excel_file_name
+        response = StreamingHttpResponse(file_iterator(the_file_name))
+        response['Content-Type'] = 'application/octet-stream'
+        response['Content-Disposition'] = 'attachment;filename="{0}"'.format(excel_file_name)
+        return response
