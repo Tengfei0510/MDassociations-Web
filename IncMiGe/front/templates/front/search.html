@@ -2,89 +2,167 @@
 
 
 {% block content %}
-    <div class="container">
-        <div class="row" style="border: 1px solid #E0E0E0;">
-            <div class="col-md-2" style="height: 700px; overflow-y: auto;">
-                <ul id="treeview">
-                    <li data-icon-cls="fa fa-inbox">MiRna
-                        <ul>
-                            {% for rna in mirnas %}#}
-                                <li><a href="/front/search/?mirna={{ rna }}">{{ rna }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-                    <li data-icon-cls="fa fa-bandcamp">LncRna
-                        <ul>
-                            {% for rna in lncrnas %}#}
-                                <li><a href="/front/search/?lncrna={{ rna }}">{{ rna }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-                    <li data-icon-cls="fa fa-bars">Gene
-                        <ul>
-                            {% for gene in genes %}#}
-                                <li><a href="/front/search/?gene={{ gene }}">{{ gene }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-                    <li data-icon-cls="fa fa-info-circle">Disease
-                        <ul>
-                            {% for disease in diseases %}#}
-                                <li><a href="/front/search/?disease={{ disease }}">{{ disease }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-10" style="height: 700px; overflow-y: auto; font-size: 14px; margin-top: 10px;">
-                {% if data|length > 0 %}
-                    <table class="table table-bordered table-responsive table-hover">
-                        <thead class="thead-inverse">
-                        <tr>
-                            <td>LncRNA</td>
-                            <td>MiRNA</td>
-                            <td>Gene</td>
-                            <td>Pathway Name</td>
-                            <td>Journal</td>
-                            <td>PubMed ID</td>
-                            <td>Disease/Tissue</td>
-                            <td>Title</td>
-                        </tr>
-                        </thead>
-                        {% for d in data %}
-                            <tr>
-                                <td>{{ d.LncRNA }}</td>
-                                <td>{{ d.MiRNA }}</td>
-                                <td>{{ d.Gene }}</td>
-                                <td>{{ d.Pathway_Name }}</td>
-                                <td>{{ d.Journal }}</td>
-                                <td>
-                                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term={{ d.PubMed_ID }}"
-                                       target="_blank">
-                                        {{ d.PubMed_ID }}
-                                    </a>
-                                </td>
-                                <td>{{ d.Disease_Tissue }}</td>
-                                <td>{{ d.Title }}</td>
-                            </tr>
+<div class="container">
+    <div class="row">
+        <form method="GET">
+            <label><b>INPUT</b></label>
+            <input id="option" name="option" list="options" placeholder="example: mirna">
+            <datalist id="options">
+                <option value="MiRna">
+                <option value="LncRna">
+                <option value="Gene">
+                <option value="GeneID">
+                <option value="Disease">
+            </datalist>
+            <input id="input_value" type="text" name="query" placeholder="example: let-7">
+            <input type="submit" value="search">
+        </form>
+    </div>
+    <div class="row" style="border: 1px solid #E0E0E0;">
+        <div class="col-md-2" style="height: 700px; overflow-y: auto;">
+            <ul id="treeview">
+                <li data-icon-cls="fa fa-inbox">MiRna
+                    <ul>
+                        {% for rna in mirnas %}#}
+                        <li><a href="/front/search/?option=mirna&query={{ rna }}">{{ rna }}</a></li>
                         {% endfor %}
-                    </table>
-                {% endif %}
-            </div>
+                    </ul>
+                </li>
+                <li data-icon-cls="fa fa-bandcamp">LncRna
+                    <ul>
+                        {% for rna in lncrnas %}#}
+                        <li><a href="/front/search/?option=lncrna&query={{ rna }}">{{ rna }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li data-icon-cls="fa fa-bars">Gene
+                    <ul>
+                        {% for gene in genes %}#}
+                        <li><a href="/front/search/?option=gene&query={{ gene }}">{{ gene }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li data-icon-cls="fa fa-camera-retro">Gene ID (All)
+                    <ul>
+                        {% for gene_id in gene_ids %}#}
+                        <li><a href="/front/search/?option=gene&query={{ gene_id }}">{{ gene_id }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li data-icon-cls="fa fa-info-circle">Disease
+                    <ul>
+                        {% for disease in diseases %}#}
+                        <li><a href="/front/search/?option=disease&query={{ disease }}">{{ disease }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-10" style="height: 700px; overflow-y: auto; font-size: 14px; margin-top: 10px;">
+            {% if data|length > 0 %}
+            <table id="result_table" class="table table-bordered table-responsive table-hover">
+                <thead class="thead-inverse">
+                <tr>
+                    <td onclick="sortTable(0)">LncRNA(Sort)</td>
+                    <td onclick="sortTable(1)">MiRNA(Sort)</td>
+                    <td onclick="sortTable(2)">Gene(Sort)</td>
+                    <td>Gene ID (All)</td>
+                    <td>Pathway Name</td>
+                    <td>Journal</td>
+                    <td>PubMed ID</td>
+                    <td onclick="sortTable(7)">Disease/Tissue(Sort)</td>
+                    <td>Title</td>
+                </tr>
+                </thead>
+                {% for d in data %}
+                <tr>
+                    <td>{{ d.LncRNA }}</td>
+                    <td>{{ d.MiRNA }}</td>
+                    <td>{{ d.Gene }}</td>
+                    <td>{{ d.Gene_ID }}</td>
+                    <td>{{ d.Pathway_Name }}</td>
+                    <td>{{ d.Journal }}</td>
+                    <td>
+                        <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term={{ d.PubMed_ID }}"
+                           target="_blank" style="color: #ff0000">
+                            {{ d.PubMed_ID }}
+                        </a>
+                    </td>
+                    <td>{{ d.Disease_Tissue }}</td>
+                    <td>{{ d.Title }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% else %}
+            <div>Sorry! We could not find your search this term within our database. Maybe try using other terms.</div>
+            {% endif %}
         </div>
     </div>
+</div>
 {% endblock %}
 
 {% block custom_js %}
-    <!-- you need to include the ShieldUI CSS and JS assets in order for the TreeView widget to work -->
-    <link rel="stylesheet" type="text/css"
-          href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css"/>
-    <script type="text/javascript"
-            src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+<!-- you need to include the ShieldUI CSS and JS assets in order for the TreeView widget to work -->
+<link rel="stylesheet" type="text/css"
+      href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css"/>
+<script type="text/javascript"
+        src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
 
-    <script type="text/javascript">
+<script type="text/javascript">
         jQuery(function ($) {
             $("#treeview").shieldTreeView();
         });
-    </script>
+
+
+
+</script>
+<script>
+    function sortTable(n) {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById("result_table");
+        switching = true;
+
+        dir = "asc";
+
+        while (switching) {
+
+            switching = false;
+            rows = table.getElementsByTagName("TR");
+
+            for (i = 1; i < (rows.length - 1); i++) {
+
+                shouldSwitch = false;
+
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+
+                if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+
+                        shouldSwitch= true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+
+                        shouldSwitch= true;
+                        break;
+                    }
+                }
+            }
+
+            if (shouldSwitch) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+
+                switchcount ++;
+            } else {
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+</script>
 {% endblock %}
