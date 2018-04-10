@@ -1,0 +1,22 @@
+Sub hyperlink()
+    With Worksheets("Sheet1")
+        For i = 2 To 433
+            If i <> 64 And i <> 327 Then
+                myaddr = "https://www.ncbi.nlm.nih.gov/pubmed/?term=" + Trim(Str(.Cells(i, 8).Value))
+                .Cells(i, 8).Hyperlinks.Add anchor:=.Cells(i, 8), Address:=myaddr
+            End If
+        Next i
+        For i = 2 To 433
+            myaddr = "https://www.ncbi.nlm.nih.gov/gene/?term=" + .Cells(i, 3).Value
+            .Cells(i, 3).Hyperlinks.Add anchor:=.Cells(i, 3), Address:=myaddr
+        Next i
+        For i = 2 To 433
+            myaddr = "http://www.mirbase.org/cgi-bin/query.pl?terms=" + .Cells(i, 2).Value
+            .Cells(i, 2).Hyperlinks.Add anchor:=.Cells(i, 2), Address:=myaddr
+        Next i
+        For i = 2 To 433
+            myaddr = "http://rnacentral.org/search?q=" + .Cells(i, 1).Value
+            .Cells(i, 1).Hyperlinks.Add anchor:=.Cells(i, 1), Address:=myaddr
+        Next i
+    End With
+End Sub

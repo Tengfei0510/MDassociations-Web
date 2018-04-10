@@ -20,47 +20,43 @@ def search_view(request):
     mirnas = select_items['mirnas']
     lncrnas = select_items['lncrnas']
     genes = select_items['genes'],
+    gene_ids = select_items['gene_ids']
     diseases = select_items['diseases']
     new_genes = []
     for gene in genes:
         new_genes.append(gene)
 
-    req_lncrna = request.GET.get('lncrna', None)
-    req_mirna = request.GET.get('mirna', None)
-    req_gene = request.GET.get('gene', None)
-    req_disease = request.GET.get('disease', None)
+    option_value = request.GET.get('option', None)
+    query_value = request.GET.get('query', None)
 
     data = []
-    query = None
-    if req_mirna:
-        query = query_search_item(req_mirna, 'MiRNA')
-    elif req_lncrna:
-        query = query_search_item(req_lncrna, 'LncRNA')
-    elif req_gene:
-        query = query_search_item(req_gene, 'Gene')
-    elif req_disease:
-        query = query_search_item(req_disease, 'Disease_Tissue')
+    if option_value is not None and option_value != '' and \
+            query_value is not None and query_value != '':
 
-    if query:
-        for d in query:
-            temp = dict()
-            temp['MiRNA'] = d['MiRNA']
-            temp['LncRNA'] = d['LncRNA']
-            temp['Gene'] = d['Gene']
-            temp['Disease_Tissue'] = d['Disease_Tissue']
-            temp['Journal'] = d['Journal']
-            temp['Title'] = d['Title']
-            temp['PubMed_ID'] = d['PubMed_ID']
-            temp['Pathway_Name'] = d['Pathway_Name']
-            data.append(temp)
-    return render(request, 'front/search.html',
-                  {
-                      'mirnas': mirnas,
-                      'lncrnas': lncrnas,
-                      'genes': new_genes[0],
-                      'diseases': diseases,
-                      'data': data
-                  })
+        right_params = True
+        query = query_search_item(query_value, option_value.lower())
+        if query:
+            for d in query:
+                temp = dict()
+                temp['MiRNA'] = d['MiRNA']
+                temp['LncRNA'] = d['LncRNA']
+                temp['Gene'] = d['Gene']
+                temp['Gene_ID'] = d['Gene_ID']
+                temp['Disease_Tissue'] = d['Disease_Tissue']
+                temp['Journal'] = d['Journal']
+                temp['Title'] = d['Title']
+                temp['PubMed_ID'] = d['PubMed_ID']
+                temp['Pathway_Name'] = d['Pathway_Name']
+                data.append(temp)
+
+    return render(request, 'front/search.html', {
+                        'mirnas': mirnas,
+                        'lncrnas': lncrnas,
+                        'genes': new_genes[0],
+                        'gene_ids': gene_ids,
+                        'diseases': diseases,
+                        'data': data
+                    })
 
 
 def download(request):
@@ -68,7 +64,7 @@ def download(request):
     if p == 'page':
         return render(request, 'front/download.html')
     else:
-        excel_file_name = 'lncRNA-miRNA-mRNA.xlsx'
+        excel_file_name = 'lncRNA-miRNA-mRNA_assciations.xlsx'
 
         def file_iterator(file_name, chunk_size=512):
             with open(file_name, 'rb') as f:
