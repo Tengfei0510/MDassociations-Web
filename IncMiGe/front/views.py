@@ -3,8 +3,8 @@ import os
 from django.http import StreamingHttpResponse
 from django.shortcuts import render
 
-from .util import query_select_items, query_search_item
-
+#from .util import query_select_items, query_search_item
+from .models import LncCeRBase
 
 # Create your views here.
 def index_view(request):
@@ -15,45 +15,38 @@ def contact_view(request):
     return render(request, 'front/contact.html')
 
 
-def search_view(request):
-    select_items = query_select_items()
-    mirnas = select_items['mirnas']
-    lncrnas = select_items['lncrnas']
-    genes = select_items['genes'],
-    gene_ids = select_items['gene_ids']
-    diseases = select_items['diseases']
-    new_genes = []
-    for gene in genes:
-        new_genes.append(gene)
+def search(request):
+    return render(request, 'front/search_page.html')
 
+def search_view(request):
+    select_items = LncCeRBase.objects.all()
+    mirnas = select_items.order_by('mirnas').values('mirnas').distinct()
+    lncrnas = select_items.order_by('lncrnas').values('lncrnas').distinct()
+    genes = select_items.order_by('genes').values('genes').distinct()
+    #gene_ids = select_items.order_by('gene_ids').values('gene_ids').distinct()
+    diseases = select_items.order_by('diseases').values('diseases').distinct()
     option_value = request.GET.get('option', None)
     query_value = request.GET.get('query', None)
-
-    data = []
-    if option_value is not None and option_value != '' and \
-            query_value is not None and query_value != '':
+    data = {}
+    if option_value and query_value:
 
         right_params = True
-        query = query_search_item(query_value, option_value.lower())
+        if option_value == "MiRNA":
+            query = select_items.filter(mirnas=query_value)
+        elif option_value == "LncRNA":
+            query = select_items.filter(lncrnas=query_value)
+        elif option_value == "Gene":
+            query = select_items.filter(gene_ids__contains=query_value)
+        elif option_value == "Disease":
+            query = select_items.filter(diseases=query_value)
+        else:
+            query = None
         if query:
-            for d in query:
-                temp = dict()
-                temp['MiRNA'] = d['MiRNA']
-                temp['LncRNA'] = d['LncRNA']
-                temp['Gene'] = d['Gene']
-                temp['Gene_ID'] = d['Gene_ID']
-                temp['Disease_Tissue'] = d['Disease_Tissue']
-                temp['Journal'] = d['Journal']
-                temp['Title'] = d['Title']
-                temp['PubMed_ID'] = d['PubMed_ID']
-                temp['Pathway_Name'] = d['Pathway_Name']
-                data.append(temp)
-
+            data = query
     return render(request, 'front/search.html', {
                         'mirnas': mirnas,
                         'lncrnas': lncrnas,
-                        'genes': new_genes[0],
-                        'gene_ids': gene_ids,
+                        'genes': genes,
                         'diseases': diseases,
                         'data': data
                     })

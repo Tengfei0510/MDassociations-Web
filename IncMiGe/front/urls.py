@@ -15,4 +15,5 @@ urlpatterns = [
     url(r'^search/$', views.search_view, name='search'),
     url(r'^download$', views.download, name='download'),
     url(r'^links', views.links, name='links'),
+    url(r'^search_page$', views.search, name='search_page'),
 ]

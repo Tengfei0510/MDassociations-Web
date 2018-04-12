@@ -21,7 +21,7 @@ from django.contrib import admin
 from .view import index
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^__admin/', admin.site.urls),
     url(r'^front/', include('front.urls')),
     url(r'^$', index, name='index')
 ]
