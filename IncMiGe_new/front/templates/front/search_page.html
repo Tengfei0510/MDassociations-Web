@@ -1,0 +1,96 @@
+{% extends 'front/index.html' %}
+
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <form method="GET" action="search/">
+            <label><b>INPUT</b></label>
+            <input id="option" name="option" list="options" placeholder="example: MiRNA" autocomplete="off">
+            <datalist id="options">
+                <option value="MiRNA">
+                <option value="lncRNA">
+                <option value="Gene">
+                <option value="Disease">
+            </datalist>
+            <input id="input_value" type="text" name="query" placeholder="example: let-7">
+            <input type="submit" value="search">
+        </form>
+    </div>
+    <div style="height: 200px">
+        &nbsp;
+    </div>
+    <div style="padding-bottom: 5px">
+        <hr>
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block custom_js %}
+<!-- you need to include the ShieldUI CSS and JS assets in order for the TreeView widget to work -->
+<link rel="stylesheet" type="text/css"
+      href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css"/>
+<script type="text/javascript"
+        src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+
+<script type="text/javascript">
+        jQuery(function ($) {
+            $("#treeview").shieldTreeView();
+        });
+
+
+
+</script>
+<script>
+    function sortTable(n) {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById("result_table");
+        switching = true;
+
+        dir = "asc";
+
+        while (switching) {
+
+            switching = false;
+            rows = table.getElementsByTagName("TR");
+
+            for (i = 1; i < (rows.length - 1); i++) {
+
+                shouldSwitch = false;
+
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+
+                if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+
+                        shouldSwitch= true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+
+                        shouldSwitch= true;
+                        break;
+                    }
+                }
+            }
+
+            if (shouldSwitch) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+
+                switchcount ++;
+            } else {
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+</script>
+{% endblock %}

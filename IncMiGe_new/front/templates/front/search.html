@@ -1,0 +1,169 @@
+{% extends 'front/index.html' %}
+
+
+{% block content %}
+<div class="container">
+    <script language="javascript">
+     function mshow(path,divid)
+        {
+          document.getElementById("sub"+path+divid).style.display="block";
+        }
+    function mhidden(path,divid)
+        {
+          document.getElementById("sub"+path+divid).style.display="none";
+        }
+    </script>
+    <div class="row" style="border: 1px solid #E0E0E0;">
+        <div class="col-md-2" style="height: 700px; overflow-y: auto;">
+            <ul id="treeview">
+                <li data-icon-cls="fa fa-inbox">MiRNA
+                    <ul>
+                        {% for rna in mirnas %}#}
+                        <li><a href="/front/search/?option=MiRNA&query={{ rna.mirnas }}">{{ rna.mirnas }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li data-icon-cls="fa fa-bandcamp">LncRNA
+                    <ul>
+                        {% for rna in lncrnas %}#}
+                        <li><a href="/front/search/?option=LncRNA&query={{ rna.lncrnas }}">{{ rna.lncrnas }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li data-icon-cls="fa fa-bars">Gene
+                    <ul>
+                        {% for gene in genes %}#}
+                        <li><a href="/front/search/?option=Gene&query={{ gene.genes }}">{{ gene.genes }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li data-icon-cls="fa fa-info-circle">Disease
+                    <ul>
+                        {% for disease in diseases %}#}
+                        <li><a href="/front/search/?option=Disease&query={{ disease.diseases }}">{{ disease.diseases }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-10" style="height: 700px; overflow-y: auto; font-size: 14px; margin-top: 10px;">
+            {% if data %}
+            <table id="result_table" class="table table-bordered table-responsive table-hover">
+                <thead class="thead-inverse">
+                <tr>
+                    <td style="width: 110px;" ><a href="javascript:void(0)" onclick="sortTable(0)" title="onclick sort">LncRNA<i class="fa fa-sort" aria-hidden="true"></i></a>
+                    </td>
+                    <td style="width: 100px;" ><a href="javascript:void(0)" onclick="sortTable(1)">MiRNA<i class="fa fa-sort" aria-hidden="true"></i></a>
+                    </td>
+                    <td style="width: 80px;" ><a href="javascript:void(0)" onclick="sortTable(2)">Gene<i class="fa fa-sort" aria-hidden="true"></i></a>
+                    </td>
+                    <td>Gene name</td>
+                    <td>Pathway Name</td>
+                    <td>Description</td>
+                    <td>Title</td>
+                    <td style="width: 140px;" ><a href="javascript:void(0)" onclick="sortTable(7)">Disease/Tissue<i class="fa fa-sort" aria-hidden="true"></i></a></td>
+                    <td>Journal</td>
+                    <td>PubMed ID</td>
+                </tr>
+                </thead>
+                {% for d in data %}
+                <tr>
+                    <td><a href="http://rnacentral.org/search?q={{ d.lncrnas }}" target="_blank" style="color: #ff0000">{{ d.lncrnas }}</a> </td>
+                    <td><a href="http://www.mirbase.org/cgi-bin/query.pl?terms={{ d.mirnas }}" target="_blank" style="color: #ff0000">{{ d.mirnas }}</a></td>
+                    <td><a href="https://www.ncbi.nlm.nih.gov/gene/?term={{ d.genes }}"  target="_blank" style="color: #ff0000">{{ d.genes }}</a></td>
+                    <td>{{ d.gene_ids }}</td>
+                    <td><a href="javascript:void(0)" class="text-success j-showInfo" id="path{{d.id}}" onmouseover="mshow('path','{{d.id}}');" onmouseout="mhidden('path','{{d.id}}');" onclick="mshow('path','{{d.id}}');">details</a>
+                    <div id="subpath{{d.id}}"  class="divcss" onmouseover="this.style.display='block'">{{ d.pathway_name }}</div>
+                    </td>
+                    <td><a href="javascript:void(0)" class="text-success" id="des{{d.id}}" onmouseover="mshow('des','{{d.id}}');" onmouseout="mhidden('des','{{d.id}}');" onclick="mshow('des','{{d.id}}');">details</a>
+                    <div id="subdes{{d.id}}" class="divcss"  onmouseover="this.style.display='block'">{{ d.Description }}</div>
+                    </td>
+                    <td><a href="javascript:void(0)" class="text-success" id="title{{d.id}}" onmouseover="mshow('title','{{d.id}}');" onmouseout="mhidden('title','{{d.id}}');" onclick="mshow('title','{{d.id}}');">details</a>
+                    <div id="subtitle{{d.id}}" class="divcss"  onmouseover="this.style.display='block'">{{ d.Title }}</div>
+                    </td>
+                    <td>{{ d.diseases }}</td>
+                    <td>{{ d.Journal }}</td>
+                    <td>
+                        <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term={{ d.PubMed_ID }}"
+                           target="_blank" style="color: #ff0000">
+                            {{ d.PubMed_ID }}
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+
+            {% else %}
+            <div>&nbsp;</div>
+            {% endif %}
+        </div>
+        <div style="height: 100px">&nbsp;</div>
+    </div>
+</div>
+{% endblock %}
+
+{% block custom_js %}
+<!-- you need to include the ShieldUI CSS and JS assets in order for the TreeView widget to work -->
+<link rel="stylesheet" type="text/css"
+      href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css"/>
+<script type="text/javascript"
+        src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+
+<script type="text/javascript">
+        jQuery(function ($) {
+            $("#treeview").shieldTreeView();
+        });
+
+
+
+</script>
+<script>
+    function sortTable(n) {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById("result_table");
+        switching = true;
+
+        dir = "asc";
+
+        while (switching) {
+
+            switching = false;
+            rows = table.getElementsByTagName("TR");
+
+            for (i = 1; i < (rows.length - 1); i++) {
+
+                shouldSwitch = false;
+
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+
+                if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+
+                        shouldSwitch= true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+
+                        shouldSwitch= true;
+                        break;
+                    }
+                }
+            }
+
+            if (shouldSwitch) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+
+                switchcount ++;
+            } else {
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+</script>
+{% endblock %}
